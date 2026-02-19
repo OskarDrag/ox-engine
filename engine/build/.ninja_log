@@ -1,0 +1,9 @@
+# ninja log v7
+15	40	7931986055109693	C:/Users/lukas/Desktop/Project/engine/build/CMakeFiles/cmake.verify_globs	25bf8524793e1cba
+52	692	7931986055452251	CMakeFiles/engine.dir/src/core/window.cpp.obj	3972bdd27eecae80
+47	723	7931986055319302	CMakeFiles/engine.dir/src/application.cpp.obj	857acc2dcde1e0ed
+49	751	7931986055424708	CMakeFiles/engine.dir/src/core/log.cpp.obj	a9ab07e7966cc270
+44	772	7931986055319302	CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj	632e4e37297b003d
+41	2471	7931986055319302	CMakeFiles/engine.dir/dependencies/glad/glad.c.obj	f79c8139d8d8afcf
+2472	2657	7931986081412701	C:/Users/lukas/Desktop/Project/engine.dll	7c1e147fedf77fe
+2472	2657	7931986081412701	C:/Users/lukas/Desktop/Project/engine.dll.a	7c1e147fedf77fe
