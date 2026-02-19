@@ -1,4 +1,4 @@
 # ninja log v7
-10	26	7932016835083611	C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/cmake.verify_globs	a54a11e1aa069750
-27	473	7932016835247921	CMakeFiles/app.dir/src/entry.cpp.obj	9f615ce2adf1deb4
-476	548	7932016839742302	C:/Users/lukas/Desktop/ox-engine/app.exe	698e6e16aeb91466
+17	41	7932205736418676	C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/cmake.verify_globs	a54a11e1aa069750
+41	514	7932205736651397	CMakeFiles/app.dir/src/entry.cpp.obj	9f615ce2adf1deb4
+521	594	7932205741470446	C:/Users/lukas/Desktop/ox-engine/app.exe	698e6e16aeb91466
