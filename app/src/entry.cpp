@@ -3,6 +3,6 @@
 s_appConfig appConfig = {
     "test window",  // name
     false,  // fullscreen mode
-    800,    // width (px)
-    600     // height (px)
+    1080,    // width (px)
+    720     // height (px)
 };

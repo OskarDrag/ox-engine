@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Users/lukas/Desktop/Project/app/build/cmake_install.cmake"
+		"C:/Users/lukas/Desktop/ox-engine/app/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

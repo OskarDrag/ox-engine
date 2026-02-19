@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = D:\aplikacje\cmake-4.2.0-rc1-windows-x86_64\bin\cmake.exe --regenerate-during-build -SC:\Users\lukas\Desktop\Project\app -BC:\Users\lukas\Desktop\Project\app\build
+  command = D:\aplikacje\cmake-4.2.0-rc1-windows-x86_64\bin\cmake.exe --regenerate-during-build -SC:\Users\lukas\Desktop\ox-engine\app -BC:\Users\lukas\Desktop\ox-engine\app\build
   description = Re-running CMake...
   generator = 1
 
@@ -51,7 +51,7 @@ rule RERUN_CMAKE
 # Rule for re-checking globbed directories.
 
 rule VERIFY_GLOBS
-  command = D:\aplikacje\cmake-4.2.0-rc1-windows-x86_64\bin\cmake.exe -P C:\Users\lukas\Desktop\Project\app\build\CMakeFiles\VerifyGlobs.cmake
+  command = D:\aplikacje\cmake-4.2.0-rc1-windows-x86_64\bin\cmake.exe -P C:\Users\lukas\Desktop\ox-engine\app\build\CMakeFiles\VerifyGlobs.cmake
   description = Re-checking globbed directories...
   generator = 1
 

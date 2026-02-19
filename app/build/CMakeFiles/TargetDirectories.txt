@@ -1,3 +1,3 @@
-C:/Users/lukas/Desktop/Project/app/build/CMakeFiles/app.dir
-C:/Users/lukas/Desktop/Project/app/build/CMakeFiles/edit_cache.dir
-C:/Users/lukas/Desktop/Project/app/build/CMakeFiles/rebuild_cache.dir
+C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/app.dir
+C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/edit_cache.dir
+C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/rebuild_cache.dir
