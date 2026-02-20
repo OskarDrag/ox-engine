@@ -74,6 +74,16 @@ build CMakeFiles/engine.dir/src/application.cpp.obj: CXX_COMPILER__engine_unscan
   TARGET_PDB = C:\Users\lukas\Desktop\ox-engine\engine.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\engine.dir
 
+build CMakeFiles/engine.dir/src/core/input.cpp.obj: CXX_COMPILER__engine_unscanned_ C$:/Users/lukas/Desktop/ox-engine/engine/src/core/input.cpp || cmake_object_order_depends_target_engine
+  DEFINES = -DLIBRARY_EXPORTS -Dengine_EXPORTS
+  DEP_FILE = CMakeFiles\engine.dir\src\core\input.cpp.obj.d
+  INCLUDES = -IC:/Users/lukas/Desktop/ox-engine/engine/dependencies
+  OBJECT_DIR = CMakeFiles\engine.dir
+  OBJECT_FILE_DIR = CMakeFiles\engine.dir\src\core
+  TARGET_COMPILE_PDB = CMakeFiles\engine.dir\
+  TARGET_PDB = C:\Users\lukas\Desktop\ox-engine\engine.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\engine.dir
+
 build CMakeFiles/engine.dir/src/core/log.cpp.obj: CXX_COMPILER__engine_unscanned_ C$:/Users/lukas/Desktop/ox-engine/engine/src/core/log.cpp || cmake_object_order_depends_target_engine
   DEFINES = -DLIBRARY_EXPORTS -Dengine_EXPORTS
   DEP_FILE = CMakeFiles\engine.dir\src\core\log.cpp.obj.d
@@ -102,7 +112,7 @@ build CMakeFiles/engine.dir/src/core/window.cpp.obj: CXX_COMPILER__engine_unscan
 #############################################
 # Link the shared library C:\Users\lukas\Desktop\ox-engine\engine.dll
 
-build C$:/Users/lukas/Desktop/ox-engine/engine.dll C$:/Users/lukas/Desktop/ox-engine/engine.dll.a: CXX_SHARED_LIBRARY_LINKER__engine_ CMakeFiles/engine.dir/dependencies/glad/glad.c.obj CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj CMakeFiles/engine.dir/src/application.cpp.obj CMakeFiles/engine.dir/src/core/log.cpp.obj CMakeFiles/engine.dir/src/core/window.cpp.obj | C$:/Users/lukas/Desktop/ox-engine/engine/dependencies/GLFW/libglfw3.a
+build C$:/Users/lukas/Desktop/ox-engine/engine.dll C$:/Users/lukas/Desktop/ox-engine/engine.dll.a: CXX_SHARED_LIBRARY_LINKER__engine_ CMakeFiles/engine.dir/dependencies/glad/glad.c.obj CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj CMakeFiles/engine.dir/src/application.cpp.obj CMakeFiles/engine.dir/src/core/input.cpp.obj CMakeFiles/engine.dir/src/core/log.cpp.obj CMakeFiles/engine.dir/src/core/window.cpp.obj | C$:/Users/lukas/Desktop/ox-engine/engine/dependencies/GLFW/libglfw3.a
   LINK_FLAGS = -shared
   LINK_LIBRARIES = C:/Users/lukas/Desktop/ox-engine/engine/dependencies/GLFW/libglfw3.a  -lopengl32  -lgdi32  -luser32  -lshell32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\engine.dir

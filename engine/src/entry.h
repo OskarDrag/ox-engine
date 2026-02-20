@@ -9,7 +9,7 @@ int main() {
     if (startupProgram(&appState, appConfig)) {
         mainLoop(&appState);
 
-        shutdownProgram();
+        shutdownProgram(&appState);
     }
     return 0;
 }

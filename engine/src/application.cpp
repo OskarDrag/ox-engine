@@ -44,6 +44,7 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
     
     // creating the window
     appState->window = c_window(appConfig.name, appConfig.fullscreen, appConfig.width, appConfig.height);
+    appState->input = c_input(appState->window.instance);
     //OX_ASSERT(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress));
 
     OX_INFO("application opened succesfully!");
@@ -55,13 +56,19 @@ void mainLoop(s_appState* appState) {
     while (appState->isRunning) {
         glfwSwapBuffers(appState->window.instance);
         
-        glfwPollEvents();
+        appState->input.update();
         if (glfwWindowShouldClose(appState->window.instance)) appState->isRunning = false;
     }
 }
 
-void shutdownProgram() {
+void shutdownProgram(s_appState* appState) {
     OX_INFO("closing the app");
+    appState->input.shutdown();
     glfwTerminate();
     shutdownLogger();
+}
+
+void abortProgram() {
+    OX_INFO("aborting the application");
+    exit(0);
 }

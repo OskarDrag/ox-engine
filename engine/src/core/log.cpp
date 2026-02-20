@@ -1,7 +1,7 @@
 #include "log.h"
 #include "assert.h"
 
-std::ofstream logSaveFile;
+static std::ofstream logSaveFile;
 
 bool initializeLogger() {
     logSaveFile.open("log.log");

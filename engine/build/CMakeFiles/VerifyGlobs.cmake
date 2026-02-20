@@ -5,6 +5,7 @@
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/lukas/Desktop/ox-engine/engine/src/*.cpp")
 set(OLD_GLOB
   "C:/Users/lukas/Desktop/ox-engine/engine/src/application.cpp"
+  "C:/Users/lukas/Desktop/ox-engine/engine/src/core/input.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/log.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/window.cpp"
   )
