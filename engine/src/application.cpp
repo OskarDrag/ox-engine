@@ -8,7 +8,6 @@
 bool startupProgram(s_appState* appState, s_appConfig appConfig) {
 
     // setting up the application on the start
-    OX_INFO("starting the application . . . ");
 
     appState->name = appConfig.name;
     appState->isRunning = true;
@@ -26,10 +25,11 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
     #endif
 
     // starting all the subsystems
-
+    OX_ASSERT(initializeLogger()); // logger gets to start before the call so it will input it into the log file
+    OX_INFO("starting the application . . . ");
     OX_INFO("initialising subsystems . . . ");
 
-    OX_ASSERT(initializeLogger());
+
 
     OX_INFO("initialising succesfull");
 
