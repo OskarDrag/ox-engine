@@ -33,6 +33,8 @@ struct s_appConfig {
 
 OX_API bool startupProgram(s_appState* appState, s_appConfig appConfig);
 
+OX_API void setGameFrameCallback(void (*callback)());
+
 OX_API void mainLoop(s_appState* appState);
 
 OX_API void shutdownProgram(s_appState* appState);

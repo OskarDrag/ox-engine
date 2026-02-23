@@ -25,7 +25,7 @@ bool initializeLogger();
 
 void shutdownLogger();
 
-void insertIntoLogFile(std::string text);
+OX_API void insertIntoLogFile(std::string text);
 
 // templates and exporting/importing functions isn't a option, but even without the prefix for export, 
 // it still is seen by the application, so it can be used by it

@@ -4,6 +4,7 @@
 #include "core/assert.h"
 #include "core/window.h"
 
+static void (*gameFrameCallback)() = nullptr;
 
 bool startupProgram(s_appState* appState, s_appConfig appConfig) {
 
@@ -52,14 +53,33 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
     return 1;
 }
 
+void setGameFrameCallback(void (*callback)()) {
+    gameFrameCallback = callback;
+}
+
 void mainLoop(s_appState* appState) {
     while (appState->isRunning) {
         glfwSwapBuffers(appState->window.instance);
-        
+        // all input should be done between update and reset
         appState->input.update();
+        if (appState->input.isKeyPressed(KEY_ESCAPE)) {
+            appState->isRunning = false;
+        }
+        if (appState->input.isButtonHeld(RMB)) {
+            glm::vec2 pos = appState->input.getMousePosition();
+            OX_DEBUG(pos.x, pos.y);
+        }
+        if (appState->input.isKeyHeld(KEY_LEFT_CONTROL)) {
+            OX_DEBUG(appState->input.getScrollOffset());
+        }
+
+        OX_ASSERT(gameFrameCallback) gameFrameCallback();
+
+        appState->input.resetInput();
         if (glfwWindowShouldClose(appState->window.instance)) appState->isRunning = false;
     }
 }
+
 
 void shutdownProgram(s_appState* appState) {
     OX_INFO("closing the app");

@@ -1,5 +1,7 @@
 #include "../includes/vendor.h"
 
+#include "../defines.h"
+
 #include <vector>
 
 class c_input {
@@ -8,20 +10,41 @@ class c_input {
         c_input(GLFWwindow* window);
         void shutdown();
         void update();
+        void resetInput();
+        OX_API std::vector<int> getHeldKeys();
+        OX_API std::vector<int> getHeldButtons();
+        OX_API glm::vec2 getMousePosition();
+        OX_API float getScrollOffset();
+        OX_API void setScrollOffset(float offset);
+        OX_API bool isKeyPressed(int key);
+        OX_API bool isKeyReleased(int key);
+        OX_API bool isKeyHeld(int key);
+        OX_API bool isButtonPressed(int button);
+        OX_API bool isButtonReleased(int button);
+        OX_API bool isButtonHeld(int button);
     private:
-        static void resetKeys();
+        
         static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
+        static void mouse_button_callback(GLFWwindow* window, int button, int action, int mods);
+        static void cursor_position_callback(GLFWwindow* window, double xpos, double ypos);
+        static void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+
+        static glm::vec2 m_mousePosition;
+        static float m_scrollOffset;
 
         static std::vector<int> m_pressedKeys;
         static std::vector<int> m_releasedKeys;
         static std::vector<int> m_heldKeys;
+
+        static std::vector<int> m_pressedButtons;
+        static std::vector<int> m_releasedButtons;
+        static std::vector<int> m_heldButtons;
 };
 
 
-#define KEY_RELEASED                0
-#define KEY_PRESSED                 1
-#define KEY_HELD                    2
-
+#define RELEASED                0
+#define PRESSED                 1
+#define HELD                    2
 
 
 #define KEY_SPACE              32
@@ -148,3 +171,16 @@ class c_input {
 #define KEY_MENU               348
 
 #define KEY_LAST               KEY_MENU
+
+#define MOUSE_BUTTON_1         0
+#define MOUSE_BUTTON_2         1
+#define MOUSE_BUTTON_3         2
+#define MOUSE_BUTTON_4         3
+#define MOUSE_BUTTON_5         4
+#define MOUSE_BUTTON_6         5
+#define MOUSE_BUTTON_7         6
+#define MOUSE_BUTTON_8         7
+#define MOUSE_BUTTON_LAST      MOUSE_BUTTON_8
+#define LMB                    MOUSE_BUTTON_1
+#define RMB                    MOUSE_BUTTON_2
+#define MMB                    MOUSE_BUTTON_3
