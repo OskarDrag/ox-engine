@@ -1,10 +1,11 @@
 #pragma once
 
-#include "../includes/vendor.h"
 #include "../defines.h"
 
 #include <string>
 
+struct GLFWwindow;
+struct GLFWmonitor;
 
 class c_window {
     public:

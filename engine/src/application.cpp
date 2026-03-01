@@ -1,8 +1,15 @@
 #include "application.h"
 
+#include "includes/vendor.h"
+
 #include "core/log.h"
 #include "core/assert.h"
 #include "core/window.h"
+
+#include <chrono>
+#include <thread>
+#include <unistd.h>
+
 
 static void (*gameFrameCallback)() = nullptr;
 static s_appState* appRef;
@@ -44,10 +51,9 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     }
     
-    // creating the window
     appRef->window = c_window(appConfig.name, appConfig.fullscreen, appConfig.width, appConfig.height);
     appRef->input = c_input(appState->window.instance);
-    //OX_ASSERT(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress));
+    OX_ASSERT(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress));
 
     OX_INFO("application opened succesfully!");
 
@@ -72,6 +78,10 @@ void mainLoop() {
 
         appRef->input.resetInput();
         if (glfwWindowShouldClose(appRef->window.instance)) appRef->isRunning = false;
+
+        // fps stabiliser (zmienic to na wlasny system czasowy)
+        std::this_thread::sleep_for(std::chrono::nanoseconds(1666667));
+        
     }
 }
 

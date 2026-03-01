@@ -8,6 +8,7 @@ set(OLD_GLOB
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/input.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/log.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/window.cpp"
+  "C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/renderer.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

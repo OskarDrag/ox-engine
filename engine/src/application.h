@@ -3,7 +3,6 @@
 #include <string>
 
 #include "defines.h"
-#include "includes/vendor.h"
 #include "core/window.h"
 #include "core/input.h"
 
@@ -38,7 +37,5 @@ OX_API void setGameFrameCallback(void (*callback)());
 OX_API void mainLoop();
 
 OX_API void shutdownProgram();
-
-OX_API void abortProgram();
 
 OX_API double getTimeRunning();

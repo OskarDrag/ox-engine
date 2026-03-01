@@ -46,7 +46,7 @@ build cmake_object_order_depends_target_app: phony || .
 
 build CMakeFiles/app.dir/src/entry.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/lukas/Desktop/ox-engine/app/src/entry.cpp || cmake_object_order_depends_target_app
   DEP_FILE = CMakeFiles\app.dir\src\entry.cpp.obj.d
-  INCLUDES = -IC:/Users/lukas/Desktop/ox-engine/app/../engine/src -IC:/Users/lukas/Desktop/ox-engine/app/../engine/dependencies
+  INCLUDES = -IC:/Users/lukas/Desktop/ox-engine/app/..
   OBJECT_DIR = CMakeFiles\app.dir
   OBJECT_FILE_DIR = CMakeFiles\app.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\app.dir\

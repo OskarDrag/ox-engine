@@ -3,9 +3,10 @@
 #include <algorithm>
 #include "log.h"
 
+#include "../includes/vendor.h"
 
-
-glm::vec2 c_input::m_mousePosition = glm::vec2(0.0f, 0.0f);
+float c_input::m_mousePositionx = 0.0f;
+float c_input::m_mousePositiony = 0.0f;
 float c_input::m_scrollOffset = 0.0f;
 float c_input::m_oldScrollOffset = c_input::m_scrollOffset;
 
@@ -79,7 +80,8 @@ void c_input::mouse_button_callback(GLFWwindow* window, int button, int action, 
 }
 
 void c_input::cursor_position_callback(GLFWwindow* window, double xpos, double ypos) {
-    m_mousePosition = glm::vec2(xpos, ypos);
+    m_mousePositionx = xpos;
+    m_mousePositiony = ypos;
 }
 
 void c_input::scroll_callback(GLFWwindow* window, double xoffset, double yoffset) {
@@ -94,8 +96,9 @@ std::vector<int> c_input::getHeldButtons() {
     return m_heldButtons;
 }
 
-glm::vec2 c_input::getMousePosition() {
-    return m_mousePosition;
+void c_input::getMousePosition(float &xposition, float &yposition) {
+    xposition = m_mousePositionx;
+    yposition = m_mousePositiony;
 }
 
 float c_input::getScrollOffset() {

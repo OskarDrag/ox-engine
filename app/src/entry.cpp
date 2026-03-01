@@ -1,9 +1,7 @@
-#include <entry.h>
-#include <application.h>
-
-#include <core/log.h>
+#include <ox.h>
 
 // the startup configuration of the app
+// TODO: make this be read from a file so it can be saved and remembered next launch
 
 s_appConfig appConfig = {
     "ox-engine app",  // name
@@ -14,15 +12,19 @@ s_appConfig appConfig = {
 };
 
 double timeSeconds = 0.0f;
+int fps = 0;
 
 // the main loop of the game is here
 void gameFrame() {
     
-    if (appState.input.isKeyHeld(KEY_SPACE) && getTimeRunning() > timeSeconds + 1.0f) {
-        OX_DEBUG("Time running: ", std::floor(appState.timeRunning), "s");
+    if (ox_input.isKeyHeld(KEY_SPACE) && getTimeRunning() > timeSeconds + 1.0f) {
+        OX_DEBUG("Time running: ", (int)getTimeRunning(), "s");
+        OX_DEBUG(fps, "fps");
+        fps = 0;
         timeSeconds = getTimeRunning();
     }
-    if (appState.input.scrolled()) {
-        OX_DEBUG(appState.input.getScrollDirection());
+    if (ox_input.scrolled()) {
+        OX_DEBUG(ox_input.getScrollDirection());
     }
+    fps++;
 }

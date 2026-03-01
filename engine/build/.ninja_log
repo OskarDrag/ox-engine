@@ -1,10 +1,11 @@
 # ninja log v7
-8	26	7940827784542652	C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/cmake.verify_globs	1945b51eb0da9d6c
-41	733	7940827784928380	CMakeFiles/engine.dir/src/core/window.cpp.obj	83ab28612f7b10cf
-32	738	7940827784838011	CMakeFiles/engine.dir/src/application.cpp.obj	71a801aeb07f3ef5
-29	753	7940827784807908	CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj	fdbe7c6d50cd53c
-38	760	7940827784897338	CMakeFiles/engine.dir/src/core/log.cpp.obj	14c9024051bf99f3
-35	833	7940827784858556	CMakeFiles/engine.dir/src/core/input.cpp.obj	9a30d82141cd864f
-27	2240	7940827784774903	CMakeFiles/engine.dir/dependencies/glad/glad.c.obj	ace7c3e4c14ecc23
-2242	2401	7940827808437717	C:/Users/lukas/Desktop/ox-engine/engine.dll	a47a6bcd85b0e399
-2242	2401	7940827808437717	C:/Users/lukas/Desktop/ox-engine/engine.dll.a	a47a6bcd85b0e399
+8	24	7940884877212080	C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/cmake.verify_globs	1945b51eb0da9d6c
+41	112	7940884877537951	CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj	461d115262aaedfc
+35	528	7940884877450126	CMakeFiles/engine.dir/src/core/log.cpp.obj	14c9024051bf99f3
+28	784	7940884877373604	CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj	fdbe7c6d50cd53c
+38	839	7940884877491730	CMakeFiles/engine.dir/src/core/window.cpp.obj	83ab28612f7b10cf
+25	853	7940884877373604	CMakeFiles/engine.dir/dependencies/glad/glad.c.obj	ace7c3e4c14ecc23
+30	902	7940884877373604	CMakeFiles/engine.dir/src/application.cpp.obj	71a801aeb07f3ef5
+33	923	7940884877450126	CMakeFiles/engine.dir/src/core/input.cpp.obj	9a30d82141cd864f
+923	1039	7940884887346899	C:/Users/lukas/Desktop/ox-engine/engine.dll	f657a25cff6fff5
+923	1039	7940884887346899	C:/Users/lukas/Desktop/ox-engine/engine.dll.a	f657a25cff6fff5

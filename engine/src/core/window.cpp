@@ -3,6 +3,7 @@
 #include "assert.h"
 #include "log.h"
 
+#include "../includes/vendor.h"
 
 c_window::c_window(std::string windowName, bool fullscreenMode, uint windowWidth, uint windowHeight) {
     name = windowName;
