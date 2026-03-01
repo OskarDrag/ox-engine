@@ -9,11 +9,7 @@ c_window::c_window(std::string windowName, bool fullscreenMode, uint windowWidth
     fullscreen = fullscreenMode;
     width = windowWidth;
     height = windowHeight; 
-    
-    OX_ASSERT(m_create());
-}
 
-bool c_window::m_create() {
     monitor = glfwGetPrimaryMonitor();
     {
         int monitorX, monitorY;
@@ -22,6 +18,17 @@ bool c_window::m_create() {
         screenHeight = (uint)monitorY;
     }
     
+    OX_ASSERT(m_create());
+}
+
+float c_window::getAspectRatio() {
+    if (fullscreen == true) {
+        return screenWidth / screenHeight;
+    }
+    return width / height;
+}
+
+bool c_window::m_create() {
     if (fullscreen) {
         instance = glfwCreateWindow(screenWidth, screenHeight, name.c_str(), monitor, NULL);
     } else {

@@ -22,6 +22,8 @@ class c_input {
         OX_API bool isButtonPressed(int button);
         OX_API bool isButtonReleased(int button);
         OX_API bool isButtonHeld(int button);
+        OX_API bool scrolled();
+        OX_API float getScrollDirection();
     private:
         
         static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
@@ -31,6 +33,7 @@ class c_input {
 
         static glm::vec2 m_mousePosition;
         static float m_scrollOffset;
+        static float m_oldScrollOffset;
 
         static std::vector<int> m_pressedKeys;
         static std::vector<int> m_releasedKeys;

@@ -5,24 +5,25 @@
 #include "core/window.h"
 
 static void (*gameFrameCallback)() = nullptr;
+static s_appState* appRef;
 
 bool startupProgram(s_appState* appState, s_appConfig appConfig) {
 
     // setting up the application on the start
-
-    appState->name = appConfig.name;
-    appState->isRunning = true;
-    appState->timeRunning = 0.0f;
+    appRef = appState;
+    appRef->name = appConfig.name;
+    appRef->isRunning = true;
+    appRef->timeRunning = 0.0f;
     #ifdef OS_WINDOWS_32
-    appState->platform = windows32;
+    appRef->platform = windows32;
     #elif OS_WINDOWS_64
-    appState->platform = windows64;
+    appRef->platform = windows64;
     #elif OS_LINUX
-    appState->platform = linux;
+    appRef->platform = linux;
     #elif OS_UNIX
-    appState->platform = unix;
+    appRef->platform = unix;
     #elif OS_MAC
-    appState->platform = mac;
+    appRef->platform = mac;
     #endif
 
     // starting all the subsystems
@@ -39,13 +40,13 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-    #ifdef OS_MAC
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-    #endif
+    if (appRef->platform == mac) {
+        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+    }
     
     // creating the window
-    appState->window = c_window(appConfig.name, appConfig.fullscreen, appConfig.width, appConfig.height);
-    appState->input = c_input(appState->window.instance);
+    appRef->window = c_window(appConfig.name, appConfig.fullscreen, appConfig.width, appConfig.height);
+    appRef->input = c_input(appState->window.instance);
     //OX_ASSERT(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress));
 
     OX_INFO("application opened succesfully!");
@@ -57,38 +58,30 @@ void setGameFrameCallback(void (*callback)()) {
     gameFrameCallback = callback;
 }
 
-void mainLoop(s_appState* appState) {
-    while (appState->isRunning) {
-        glfwSwapBuffers(appState->window.instance);
+void mainLoop() {
+    while (appRef->isRunning) {
+        appRef->timeRunning = getTimeRunning();
+        glfwSwapBuffers(appRef->window.instance);
         // all input should be done between update and reset
-        appState->input.update();
-        if (appState->input.isKeyPressed(KEY_ESCAPE)) {
-            appState->isRunning = false;
+        appRef->input.update();
+        if (appRef->input.isKeyPressed(KEY_ESCAPE)) {
+            appRef->isRunning = false;
         }
-        if (appState->input.isButtonHeld(RMB)) {
-            glm::vec2 pos = appState->input.getMousePosition();
-            OX_DEBUG(pos.x, pos.y);
-        }
-        if (appState->input.isKeyHeld(KEY_LEFT_CONTROL)) {
-            OX_DEBUG(appState->input.getScrollOffset());
-        }
-
+        // running the application side code
         OX_ASSERT(gameFrameCallback) gameFrameCallback();
 
-        appState->input.resetInput();
-        if (glfwWindowShouldClose(appState->window.instance)) appState->isRunning = false;
+        appRef->input.resetInput();
+        if (glfwWindowShouldClose(appRef->window.instance)) appRef->isRunning = false;
     }
 }
 
-
-void shutdownProgram(s_appState* appState) {
+void shutdownProgram() {
     OX_INFO("closing the app");
-    appState->input.shutdown();
+    appRef->input.shutdown();
     glfwTerminate();
     shutdownLogger();
 }
 
-void abortProgram() {
-    OX_INFO("aborting the application");
-    exit(0);
+double getTimeRunning() {
+    return appRef->timeRunning = glfwGetTime();
 }

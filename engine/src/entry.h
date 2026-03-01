@@ -10,9 +10,10 @@ s_appState appState;
 int main() {
     if (startupProgram(&appState, appConfig)) {
         setGameFrameCallback(gameFrame);
-        mainLoop(&appState);
+        mainLoop();
 
-        shutdownProgram(&appState);
+        shutdownProgram();
+        return 0;
     }
-    return 0;
+    return -1;
 }

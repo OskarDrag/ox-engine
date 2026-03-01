@@ -7,6 +7,7 @@
 
 glm::vec2 c_input::m_mousePosition = glm::vec2(0.0f, 0.0f);
 float c_input::m_scrollOffset = 0.0f;
+float c_input::m_oldScrollOffset = c_input::m_scrollOffset;
 
 std::vector<int> c_input::m_pressedKeys;
 std::vector<int> c_input::m_releasedKeys;
@@ -30,6 +31,7 @@ void c_input::shutdown() {
 
 void c_input::update() {
     glfwPollEvents();
+    
 }
 
 void c_input::resetInput() {
@@ -37,6 +39,7 @@ void c_input::resetInput() {
     m_releasedKeys.clear();
     m_pressedButtons.clear();
     m_releasedButtons.clear();
+    m_oldScrollOffset = m_scrollOffset;
 }
 
 void c_input::key_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
@@ -145,3 +148,21 @@ bool c_input::isButtonHeld(int button) {
     return 0;
 }
 
+bool c_input::scrolled() {
+    if (m_scrollOffset != m_oldScrollOffset) {
+        return 1;
+    }
+    return 0;
+}
+
+float c_input::getScrollDirection() {
+    if (m_scrollOffset != m_oldScrollOffset) {
+        if (m_scrollOffset < m_oldScrollOffset) {
+            return -1;
+        }
+        if (m_scrollOffset > m_oldScrollOffset) {
+            return 1;
+        }
+    }
+    return 0;
+}

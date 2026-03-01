@@ -18,7 +18,7 @@ class c_window {
         uint height;
         uint screenWidth;
         uint screenHeight;
-        float aspectRatio;
+        float getAspectRatio();
     private:
         bool m_create();
 };

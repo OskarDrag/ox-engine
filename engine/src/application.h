@@ -18,7 +18,7 @@ enum e_platform {
 struct s_appState {
     std::string name;
     bool isRunning;
-    float timeRunning;
+    double timeRunning;
     e_platform platform;
     c_window window;
     c_input input;
@@ -35,8 +35,10 @@ OX_API bool startupProgram(s_appState* appState, s_appConfig appConfig);
 
 OX_API void setGameFrameCallback(void (*callback)());
 
-OX_API void mainLoop(s_appState* appState);
+OX_API void mainLoop();
 
-OX_API void shutdownProgram(s_appState* appState);
+OX_API void shutdownProgram();
 
 OX_API void abortProgram();
+
+OX_API double getTimeRunning();

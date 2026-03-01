@@ -14,7 +14,7 @@ OX_API void report_assertion(const char* expression, std::string message, std::s
 {                                                   \
     if (!(expr)) {                                  \
         report_assertion(#expr, message, __FILE__, __LINE__); \
-        abortProgram();                             \
+        shutdownProgram();                          \
     }                                               \
 }
 
@@ -22,7 +22,7 @@ OX_API void report_assertion(const char* expression, std::string message, std::s
 {                                                   \
     if (!(expr)) {                                  \
         report_assertion(#expr, "", __FILE__, __LINE__);      \
-        abortProgram();                             \
+        shutdownProgram();                          \
     }                                               \
 }
 
