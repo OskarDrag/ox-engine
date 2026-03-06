@@ -1,7 +1,6 @@
 #pragma once
 
 #include "../defines.h"
-#include <string>
 #include "../application.h"
 
 #if defined ENABLE_ASSERTIONS == 1

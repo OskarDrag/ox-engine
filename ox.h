@@ -4,3 +4,4 @@
 #include "engine/src/entry.h"
 #include "engine/src/core/log.h"
 #include "engine/src/core/assert.h"
+#include "engine/src/math/math.h"

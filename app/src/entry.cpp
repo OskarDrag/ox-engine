@@ -13,15 +13,17 @@ s_appConfig appConfig = {
 
 double timeSeconds = 0.0f;
 int fps = 0;
+vec2 veca = { 3.0f, 4.0f};
 
 // the main loop of the game is here
 void gameFrame() {
     
-    if (ox_input.isKeyHeld(KEY_SPACE) && getTimeRunning() > timeSeconds + 1.0f) {
+    if (getTimeRunning() > timeSeconds + 1.0f) {
         OX_DEBUG("Time running: ", (int)getTimeRunning(), "s");
         OX_DEBUG(fps, "fps");
         fps = 0;
         timeSeconds = getTimeRunning();
+        OX_DEBUG(v2normalised(veca).x, v2normalised(veca).y);
     }
     if (ox_input.scrolled()) {
         OX_DEBUG(ox_input.getScrollDirection());

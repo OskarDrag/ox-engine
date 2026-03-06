@@ -1,5 +1,14 @@
 #pragma once
 
+#include <chrono>
+#include <thread>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <iostream>
+#include <sstream>
+#include <fstream>
+
 // Operating system check
 #ifdef _WIN32
 #define OS_WINDOWS_32

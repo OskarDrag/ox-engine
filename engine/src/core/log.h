@@ -1,9 +1,5 @@
 #pragma once
 
-#include <iostream>
-#include <sstream>
-#include <fstream>
-
 #include "../defines.h"
 
 // set debug messages based on the version of the engine

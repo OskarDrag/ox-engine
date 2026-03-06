@@ -1,7 +1,5 @@
 #include "../defines.h"
 
-#include <vector>
-
 struct GLFWwindow;
 
 class c_input {

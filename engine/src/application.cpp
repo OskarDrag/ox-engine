@@ -6,9 +6,7 @@
 #include "core/assert.h"
 #include "core/window.h"
 
-#include <chrono>
-#include <thread>
-#include <unistd.h>
+
 
 
 static void (*gameFrameCallback)() = nullptr;

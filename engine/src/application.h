@@ -1,7 +1,5 @@
 #pragma once
 
-#include <string>
-
 #include "defines.h"
 #include "core/window.h"
 #include "core/input.h"

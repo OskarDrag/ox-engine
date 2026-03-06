@@ -1,8 +1,6 @@
 #include "input.h"
 
-#include <algorithm>
 #include "log.h"
-
 #include "../includes/vendor.h"
 
 float c_input::m_mousePositionx = 0.0f;

@@ -2,8 +2,6 @@
 
 #include "../defines.h"
 
-#include <string>
-
 struct GLFWwindow;
 struct GLFWmonitor;
 
