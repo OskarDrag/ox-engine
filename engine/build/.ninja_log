@@ -1,12 +1,12 @@
 # ninja log v7
-8	26	7945781106896697	C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/cmake.verify_globs	1945b51eb0da9d6c
-49	594	7945781107307025	CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj	461d115262aaedfc
-39	671	7945781107209397	CMakeFiles/engine.dir/src/core/log.cpp.obj	14c9024051bf99f3
-46	695	7945781107267956	CMakeFiles/engine.dir/src/math/math.cpp.obj	a4476d5166894ac7
-29	866	7945781107111719	CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj	fdbe7c6d50cd53c
-27	934	7945781107078016	CMakeFiles/engine.dir/dependencies/glad/glad.c.obj	ace7c3e4c14ecc23
-43	964	7945781107238676	CMakeFiles/engine.dir/src/core/window.cpp.obj	83ab28612f7b10cf
-33	980	7945781107144691	CMakeFiles/engine.dir/src/application.cpp.obj	71a801aeb07f3ef5
-36	1045	7945781107177875	CMakeFiles/engine.dir/src/core/input.cpp.obj	9a30d82141cd864f
-1045	1164	7945781118353797	C:/Users/lukas/Desktop/ox-engine/engine.dll	bc37a7cf94f1f57c
-1045	1164	7945781118353797	C:/Users/lukas/Desktop/ox-engine/engine.dll.a	bc37a7cf94f1f57c
+8	25	7945784538255824	C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/cmake.verify_globs	1945b51eb0da9d6c
+53	571	7945784538715295	CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj	461d115262aaedfc
+37	670	7945784538553022	CMakeFiles/engine.dir/src/core/log.cpp.obj	14c9024051bf99f3
+50	680	7945784538676253	CMakeFiles/engine.dir/src/math/math.cpp.obj	a4476d5166894ac7
+29	831	7945784538467383	CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj	fdbe7c6d50cd53c
+26	881	7945784538447419	CMakeFiles/engine.dir/dependencies/glad/glad.c.obj	ace7c3e4c14ecc23
+47	912	7945784538643651	CMakeFiles/engine.dir/src/core/window.cpp.obj	83ab28612f7b10cf
+32	940	7945784538502698	CMakeFiles/engine.dir/src/application.cpp.obj	71a801aeb07f3ef5
+34	971	7945784538522885	CMakeFiles/engine.dir/src/core/input.cpp.obj	9a30d82141cd864f
+971	1086	7945784548940201	C:/Users/lukas/Desktop/ox-engine/engine.dll	bc37a7cf94f1f57c
+971	1086	7945784548940201	C:/Users/lukas/Desktop/ox-engine/engine.dll.a	bc37a7cf94f1f57c
