@@ -46,7 +46,6 @@ build cmake_object_order_depends_target_app: phony || .
 
 build CMakeFiles/app.dir/src/entry.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/lukas/Desktop/ox-engine/app/src/entry.cpp || cmake_object_order_depends_target_app
   DEP_FILE = CMakeFiles\app.dir\src\entry.cpp.obj.d
-  FLAGS = -static -static-libgcc -static-libstdc++
   INCLUDES = -IC:/Users/lukas/Desktop/ox-engine/app/..
   OBJECT_DIR = CMakeFiles\app.dir
   OBJECT_FILE_DIR = CMakeFiles\app.dir\src
@@ -63,10 +62,9 @@ build CMakeFiles/app.dir/src/entry.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Use
 # Link the executable C:\Users\lukas\Desktop\ox-engine\app.exe
 
 build C$:/Users/lukas/Desktop/ox-engine/app.exe: CXX_EXECUTABLE_LINKER__app_ CMakeFiles/app.dir/src/entry.cpp.obj | C$:/Users/lukas/Desktop/ox-engine/app/../engine.dll.a
-  FLAGS = -static -static-libgcc -static-libstdc++
   LINK_LIBRARIES = C:/Users/lukas/Desktop/ox-engine/app/../engine.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\app.dir
-  POST_BUILD = cd .
+  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\lukas\Desktop\ox-engine\app\build && D:\aplikacje\cmake-4.2.0-rc1-windows-x86_64\bin\cmake.exe -E copy_if_different D:/narzedzia/MSYS2/mingw64/bin/libwinpthread-1.dll C:/Users/lukas/Desktop/ox-engine && cd /D C:\Users\lukas\Desktop\ox-engine\app\build && D:\aplikacje\cmake-4.2.0-rc1-windows-x86_64\bin\cmake.exe -E copy_if_different D:/narzedzia/MSYS2/mingw64/bin/libgcc_s_seh-1.dll C:/Users/lukas/Desktop/ox-engine && cd /D C:\Users\lukas\Desktop\ox-engine\app\build && D:\aplikacje\cmake-4.2.0-rc1-windows-x86_64\bin\cmake.exe -E copy_if_different D:/narzedzia/MSYS2/mingw64/bin/libstdc++-6.dll C:/Users/lukas/Desktop/ox-engine"
   PRE_LINK = cd .
   TARGET_COMPILE_PDB = CMakeFiles\app.dir\
   TARGET_FILE = C:\Users\lukas\Desktop\ox-engine\app.exe
