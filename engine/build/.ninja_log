@@ -1,12 +1,12 @@
 # ninja log v7
-15	37	7945778321751573	C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/cmake.verify_globs	1945b51eb0da9d6c
-41	1194	7945778322010121	CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj	fdbe7c6d50cd53c
-59	1596	7945778322191837	CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj	461d115262aaedfc
-55	1674	7945778322152807	CMakeFiles/engine.dir/src/math/math.cpp.obj	a4476d5166894ac7
-49	1688	7945778322089548	CMakeFiles/engine.dir/src/core/log.cpp.obj	14c9024051bf99f3
-38	2642	7945778321986970	CMakeFiles/engine.dir/dependencies/glad/glad.c.obj	ace7c3e4c14ecc23
-52	3524	7945778322122174	CMakeFiles/engine.dir/src/core/window.cpp.obj	83ab28612f7b10cf
-44	3566	7945778322039789	CMakeFiles/engine.dir/src/application.cpp.obj	71a801aeb07f3ef5
-46	3621	7945778322059311	CMakeFiles/engine.dir/src/core/input.cpp.obj	9a30d82141cd864f
-3621	3807	7945778359572816	C:/Users/lukas/Desktop/ox-engine/engine.dll	bc37a7cf94f1f57c
-3621	3807	7945778359572816	C:/Users/lukas/Desktop/ox-engine/engine.dll.a	bc37a7cf94f1f57c
+15	36	7945779944264472	C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/cmake.verify_globs	1945b51eb0da9d6c
+60	597	7945779944715230	CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj	461d115262aaedfc
+50	688	7945779944607875	CMakeFiles/engine.dir/src/core/log.cpp.obj	14c9024051bf99f3
+57	708	7945779944676190	CMakeFiles/engine.dir/src/math/math.cpp.obj	a4476d5166894ac7
+40	843	7945779944513300	CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj	fdbe7c6d50cd53c
+37	940	7945779944483632	CMakeFiles/engine.dir/dependencies/glad/glad.c.obj	ace7c3e4c14ecc23
+53	949	7945779944646909	CMakeFiles/engine.dir/src/core/window.cpp.obj	83ab28612f7b10cf
+43	968	7945779944543687	CMakeFiles/engine.dir/src/application.cpp.obj	71a801aeb07f3ef5
+46	1032	7945779944567281	CMakeFiles/engine.dir/src/core/input.cpp.obj	9a30d82141cd864f
+1032	1153	7945779955531199	C:/Users/lukas/Desktop/ox-engine/engine.dll	bc37a7cf94f1f57c
+1032	1153	7945779955531199	C:/Users/lukas/Desktop/ox-engine/engine.dll.a	bc37a7cf94f1f57c
