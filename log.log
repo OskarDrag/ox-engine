@@ -2,4 +2,7 @@
 [INFO]: initialising subsystems . . .  
 [INFO]: initialising succesfull 
 [INFO]: application opened succesfully! 
+[DEBUG]: Time running:  1 s 
+[DEBUG]: 58 fps 
+[DEBUG]: 0.6 0.8 
 [INFO]: closing the app 

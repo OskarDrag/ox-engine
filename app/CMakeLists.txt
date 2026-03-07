@@ -12,5 +12,6 @@ target_include_directories(${PROJECT_NAME} PRIVATE  ${CMAKE_SOURCE_DIR}/..)
 target_link_libraries(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/../engine.dll.a)
 
 target_link_options(${PROJECT_NAME} PRIVATE
+    -static
     -static-libgcc
     -static-libstdc++)
