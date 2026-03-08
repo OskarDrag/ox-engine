@@ -18,4 +18,5 @@ target_link_options(${PROJECT_NAME} PRIVATE
     -Wl,-Bstatic,--whole-archive
     -Wl,--no-whole-archive
     -Wl,-Bdynamic
+    -lpthread
 )
