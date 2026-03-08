@@ -12,3 +12,15 @@ target_include_directories(${PROJECT_NAME} PRIVATE  ${CMAKE_SOURCE_DIR}/..)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/../engine.dll.a)
 
+if(MINGW)
+    target_link_options(${PROJECT_NAME} PRIVATE
+        -static
+        -static-libgcc
+        -static-libstdc++
+        -Wl,-Bstatic
+        -lstdc++
+        -lgcc
+        -lpthread
+        -Wl,-Bdynamic
+    )
+endif()

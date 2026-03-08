@@ -1,12 +1,12 @@
 # ninja log v7
-10	30	7946806308007286	C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/cmake.verify_globs	1945b51eb0da9d6c
-51	570	7946806308418088	CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj	461d115262aaedfc
-42	662	7946806308317545	CMakeFiles/engine.dir/src/core/log.cpp.obj	14c9024051bf99f3
-48	681	7946806308376367	CMakeFiles/engine.dir/src/math/math.cpp.obj	a4476d5166894ac7
-33	794	7946806308235277	CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj	fdbe7c6d50cd53c
-31	882	7946806308211591	CMakeFiles/engine.dir/dependencies/glad/glad.c.obj	ace7c3e4c14ecc23
-45	957	7946806308351127	CMakeFiles/engine.dir/src/core/window.cpp.obj	83ab28612f7b10cf
-36	960	7946806308266780	CMakeFiles/engine.dir/src/application.cpp.obj	71a801aeb07f3ef5
-39	964	7946806308295401	CMakeFiles/engine.dir/src/core/input.cpp.obj	9a30d82141cd864f
-964	1080	7946806318616278	C:/Users/lukas/Desktop/ox-engine/engine.dll	df7268fbd71ada2b
-964	1080	7946806318616278	C:/Users/lukas/Desktop/ox-engine/engine.dll.a	df7268fbd71ada2b
+7	23	7946811599840372	C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/cmake.verify_globs	1945b51eb0da9d6c
+43	492	7946811600192440	CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj	461d115262aaedfc
+34	597	7946811600106859	CMakeFiles/engine.dir/src/core/log.cpp.obj	14c9024051bf99f3
+40	644	7946811600157011	CMakeFiles/engine.dir/src/math/math.cpp.obj	a4476d5166894ac7
+27	753	7946811600030099	CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj	fdbe7c6d50cd53c
+37	821	7946811600136276	CMakeFiles/engine.dir/src/core/window.cpp.obj	83ab28612f7b10cf
+24	854	7946811600010472	CMakeFiles/engine.dir/dependencies/glad/glad.c.obj	ace7c3e4c14ecc23
+31	902	7946811600073193	CMakeFiles/engine.dir/src/core/input.cpp.obj	9a30d82141cd864f
+29	931	7946811600049726	CMakeFiles/engine.dir/src/application.cpp.obj	71a801aeb07f3ef5
+932	1049	7946811610155487	C:/Users/lukas/Desktop/ox-engine/engine.dll	df7268fbd71ada2b
+932	1049	7946811610155487	C:/Users/lukas/Desktop/ox-engine/engine.dll.a	df7268fbd71ada2b
