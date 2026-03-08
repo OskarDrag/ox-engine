@@ -30,6 +30,6 @@ if(MINGW)
     target_link_options(${PROJECT_NAME} PRIVATE
         -static-libgcc
         -static-libstdc++
-        -static -lpthread
+        -Wl,-Bstatic,--whole-archive -lpthread -Wl,--no-whole-archive,-Bdynamic
     )
 endif()
