@@ -15,8 +15,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/../engine.dll.
 target_link_options(${PROJECT_NAME} PRIVATE
     -static-libgcc
     -static-libstdc++
-    -Wl,-Bstatic,--whole-archive
-    -Wl,--no-whole-archive
-    -Wl,-Bdynamic
+    -Wl,-Bstatic
     -lpthread
+    -Wl,-Bdynamic
 )
