@@ -9,7 +9,7 @@ OX_API void report_assertion(const char* expression, std::string message, std::s
 
 // variants of assertions with and without messages
 
-#define OX_ASSERT_MESSAGE(expr, message)            \
+#define ox_assert_message(expr, message)            \
 {                                                   \
     if (!(expr)) {                                  \
         report_assertion(#expr, message, __FILE__, __LINE__); \
@@ -17,7 +17,7 @@ OX_API void report_assertion(const char* expression, std::string message, std::s
     }                                               \
 }
 
-#define OX_ASSERT(expr)                             \
+#define ox_assert(expr)                             \
 {                                                   \
     if (!(expr)) {                                  \
         report_assertion(#expr, "", __FILE__, __LINE__);      \

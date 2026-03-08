@@ -32,16 +32,16 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
     #endif
 
     // starting all the subsystems
-    OX_ASSERT(initializeLogger()); // logger gets to start before the call so it will input it into the log file
-    OX_INFO("starting the application . . . ");
-    OX_INFO("initialising subsystems . . . ");
+    ox_assert(initializeLogger()); // logger gets to start before the call so it will input it into the log file
+    ox_info("starting the application . . . ");
+    ox_info("initialising subsystems . . . ");
 
 
 
-    OX_INFO("initialising succesfull");
+    ox_info("initialising succesfull");
 
     // opening glfw library
-    OX_ASSERT(glfwInit());
+    ox_assert(glfwInit());
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
@@ -51,11 +51,11 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
     
     appRef->window = c_window(appConfig.name, appConfig.fullscreen, appConfig.width, appConfig.height);
     appRef->input = c_input(appState->window.instance);
-    OX_ASSERT(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress));
+    ox_assert(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress));
 
-    OX_INFO("application opened succesfully!");
+    ox_info("application opened succesfully!");
 
-    return 1;
+    return 1;       
 }
 
 void setGameFrameCallback(void (*callback)()) {
@@ -72,7 +72,7 @@ void mainLoop() {
             appRef->isRunning = false;
         }
         // running the application side code
-        OX_ASSERT(gameFrameCallback) gameFrameCallback();
+        ox_assert(gameFrameCallback) gameFrameCallback();
 
         appRef->input.resetInput();
         if (glfwWindowShouldClose(appRef->window.instance)) appRef->isRunning = false;
@@ -84,7 +84,7 @@ void mainLoop() {
 }
 
 void shutdownProgram() {
-    OX_INFO("closing the app");
+    ox_info("closing the app");
     appRef->input.shutdown();
     glfwTerminate();
     shutdownLogger();

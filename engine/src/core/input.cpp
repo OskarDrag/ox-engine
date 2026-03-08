@@ -43,14 +43,12 @@ void c_input::resetInput() {
 
 void c_input::key_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
     if (action == PRESSED) {
-        OX_INFO(key, "pressed");
         if (std::find(m_pressedKeys.begin(), m_pressedKeys.end(), key) == m_pressedKeys.end()) {
             m_pressedKeys.push_back(key);
             m_heldKeys.push_back(key);
         }
     }
     if (action == RELEASED) {
-        OX_INFO(key, "released");
         std::vector<int>::iterator iterator = std::find(m_heldKeys.begin(), m_heldKeys.end(), key);
         if (iterator != m_heldKeys.end()) {
             m_heldKeys.erase(iterator);
@@ -61,14 +59,12 @@ void c_input::key_callback(GLFWwindow* window, int key, int scancode, int action
 
 void c_input::mouse_button_callback(GLFWwindow* window, int button, int action, int mods) {
     if (action == PRESSED) {
-        OX_INFO(button, "pressed");
         if (std::find(m_pressedButtons.begin(), m_pressedButtons.end(), button) == m_pressedButtons.end()) {
             m_pressedButtons.push_back(button);
             m_heldButtons.push_back(button);
         }
     }
     if (action == RELEASED) {
-        OX_INFO(button, "released");
         std::vector<int>::iterator iterator = std::find(m_heldButtons.begin(), m_heldButtons.end(), button);
         if (iterator != m_heldButtons.end()) {
             m_heldButtons.erase(iterator);

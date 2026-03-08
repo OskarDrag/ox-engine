@@ -13,20 +13,21 @@ s_appConfig appConfig = {
 
 double timeSeconds = 0.0f;
 int fps = 0;
-vec2 veca = { 3.0f, 4.0f};
+vec3 vector1 = { 1, 0, 0};
+vec3 vector2 = { 0, 1, 0};
 
 // the main loop of the game is here
 void gameFrame() {
     
     if (getTimeRunning() > timeSeconds + 1.0f) {
-        OX_DEBUG("Time running: ", (int)getTimeRunning(), "s");
-        OX_DEBUG(fps, "fps");
+        ox_debug("Time running: ", (int)getTimeRunning(), "s");
+        ox_debug(fps, "fps");
         fps = 0;
         timeSeconds = getTimeRunning();
-        OX_DEBUG(v2normalised(veca).x, v2normalised(veca).y);
+        ox_debug(v3crossProduct(vector1, vector2).z);
     }
     if (ox_input.scrolled()) {
-        OX_DEBUG(ox_input.getScrollDirection());
+        ox_debug(ox_input.getScrollDirection());
     }
     fps++;
 }

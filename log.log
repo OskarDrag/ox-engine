@@ -4,5 +4,26 @@
 [INFO]: application opened succesfully! 
 [DEBUG]: Time running:  1 s 
 [DEBUG]: 58 fps 
-[DEBUG]: 0.6 0.8 
+[DEBUG]: 1 
+[DEBUG]: Time running:  2 s 
+[DEBUG]: 9 fps 
+[DEBUG]: 1 
+[DEBUG]: Time running:  3 s 
+[DEBUG]: 64 fps 
+[DEBUG]: 1 
+[DEBUG]: Time running:  4 s 
+[DEBUG]: 47 fps 
+[DEBUG]: 1 
+[DEBUG]: Time running:  7 s 
+[DEBUG]: 49 fps 
+[DEBUG]: 1 
+[DEBUG]: Time running:  8 s 
+[DEBUG]: 63 fps 
+[DEBUG]: 1 
+[DEBUG]: Time running:  9 s 
+[DEBUG]: 62 fps 
+[DEBUG]: 1 
+[DEBUG]: Time running:  10 s 
+[DEBUG]: 62 fps 
+[DEBUG]: 1 
 [INFO]: closing the app 

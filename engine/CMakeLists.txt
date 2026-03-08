@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(engine)
 
-set(LIBRARY_OUTPUT_PATH ../..)
+set(LIBRARY_OUTPUT_PATH ../../)
 
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
 
@@ -25,3 +25,11 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 )
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE LIBRARY_EXPORTS)
+
+if(MINGW)
+    target_link_options(${PROJECT_NAME} PRIVATE
+        -static-libgcc
+        -static-libstdc++
+        -static -lpthread
+    )
+endif()

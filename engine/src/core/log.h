@@ -71,10 +71,10 @@ void log(LogType type, argument... message) {
 
 
 // macros for shorter log calls
-#define OX_ERROR(message, ...) log(TYPE_ERROR, message, ##__VA_ARGS__) 
+#define ox_error(message, ...) log(TYPE_ERROR, message, ##__VA_ARGS__) 
 
-#define OX_WARN(message, ...) log(TYPE_WARNING, message, ##__VA_ARGS__) 
+#define ox_warn(message, ...) log(TYPE_WARNING, message, ##__VA_ARGS__) 
 
-#define OX_INFO(message, ...) log(TYPE_INFO, message, ##__VA_ARGS__) 
+#define ox_info(message, ...) log(TYPE_INFO, message, ##__VA_ARGS__) 
 
-#define OX_DEBUG(message, ...) log(TYPE_DEBUG, message, ##__VA_ARGS__) 
+#define ox_debug(message, ...) log(TYPE_DEBUG, message, ##__VA_ARGS__) 
