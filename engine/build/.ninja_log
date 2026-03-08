@@ -1,12 +1,12 @@
 # ninja log v7
-7	25	7946798669242793	C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/cmake.verify_globs	1945b51eb0da9d6c
-47	508	7946798669641588	CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj	461d115262aaedfc
-37	601	7946798669557864	CMakeFiles/engine.dir/src/core/log.cpp.obj	14c9024051bf99f3
-44	666	7946798669621501	CMakeFiles/engine.dir/src/math/math.cpp.obj	a4476d5166894ac7
-29	772	7946798669399181	CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj	fdbe7c6d50cd53c
-40	834	7946798669577943	CMakeFiles/engine.dir/src/core/window.cpp.obj	83ab28612f7b10cf
-26	850	7946798669399181	CMakeFiles/engine.dir/dependencies/glad/glad.c.obj	ace7c3e4c14ecc23
-32	876	7946798669399181	CMakeFiles/engine.dir/src/application.cpp.obj	71a801aeb07f3ef5
-34	877	7946798669518912	CMakeFiles/engine.dir/src/core/input.cpp.obj	9a30d82141cd864f
-877	1085	7946798679799995	C:/Users/lukas/Desktop/ox-engine/engine.dll	aab533b9ac03c6d7
-877	1085	7946798679799995	C:/Users/lukas/Desktop/ox-engine/engine.dll.a	aab533b9ac03c6d7
+8	25	7946803653949071	C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/cmake.verify_globs	1945b51eb0da9d6c
+47	550	7946803654337749	CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj	461d115262aaedfc
+37	616	7946803654244931	CMakeFiles/engine.dir/src/core/log.cpp.obj	14c9024051bf99f3
+43	623	7946803654308469	CMakeFiles/engine.dir/src/math/math.cpp.obj	a4476d5166894ac7
+29	765	7946803654155727	CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj	fdbe7c6d50cd53c
+26	851	7946803654135547	CMakeFiles/engine.dir/dependencies/glad/glad.c.obj	ace7c3e4c14ecc23
+31	872	7946803654179051	CMakeFiles/engine.dir/src/application.cpp.obj	71a801aeb07f3ef5
+40	875	7946803654279186	CMakeFiles/engine.dir/src/core/window.cpp.obj	83ab28612f7b10cf
+33	908	7946803654204125	CMakeFiles/engine.dir/src/core/input.cpp.obj	9a30d82141cd864f
+908	1123	7946803664955497	C:/Users/lukas/Desktop/ox-engine/engine.dll	dd4d064112db1a97
+908	1123	7946803664955497	C:/Users/lukas/Desktop/ox-engine/engine.dll.a	dd4d064112db1a97
