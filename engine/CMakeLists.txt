@@ -28,8 +28,13 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE LIBRARY_EXPORTS)
 
 if(MINGW)
     target_link_options(${PROJECT_NAME} PRIVATE
+        -static
         -static-libgcc
         -static-libstdc++
-        -Wl,-Bstatic,--whole-archive -lpthread -Wl,--no-whole-archive,-Bdynamic
+        -Wl,-Bstatic
+        -lstdc++
+        -lgcc
+        -lpthread
+        -Wl,-Bdynamic
     )
 endif()

@@ -133,7 +133,7 @@ build CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj: CXX_COMPILER__engine_
 # Link the shared library C:\Users\lukas\Desktop\ox-engine\engine.dll
 
 build C$:/Users/lukas/Desktop/ox-engine/engine.dll C$:/Users/lukas/Desktop/ox-engine/engine.dll.a: CXX_SHARED_LIBRARY_LINKER__engine_ CMakeFiles/engine.dir/dependencies/glad/glad.c.obj CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj CMakeFiles/engine.dir/src/application.cpp.obj CMakeFiles/engine.dir/src/core/input.cpp.obj CMakeFiles/engine.dir/src/core/log.cpp.obj CMakeFiles/engine.dir/src/core/window.cpp.obj CMakeFiles/engine.dir/src/math/math.cpp.obj CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj | C$:/Users/lukas/Desktop/ox-engine/engine/dependencies/GLFW/libglfw3.a
-  LINK_FLAGS = -shared -static-libgcc -static-libstdc++ -Wl,-Bstatic,--whole-archive -lpthread -Wl,--no-whole-archive,-Bdynamic
+  LINK_FLAGS = -shared -static -static-libgcc -static-libstdc++ -Wl,-Bstatic -lstdc++ -lgcc -lpthread -Wl,-Bdynamic
   LINK_LIBRARIES = C:/Users/lukas/Desktop/ox-engine/engine/dependencies/GLFW/libglfw3.a  -lopengl32  -lgdi32  -luser32  -lshell32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\engine.dir
   POST_BUILD = cd .
