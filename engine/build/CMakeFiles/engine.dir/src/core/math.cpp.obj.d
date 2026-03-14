@@ -1,7 +1,6 @@
-CMakeFiles/engine.dir/src/math/math.cpp.obj: \
- C:\Users\lukas\Desktop\ox-engine\engine\src\math\math.cpp \
- C:\Users\lukas\Desktop\ox-engine\engine\src\math\math.h \
- C:\Users\lukas\Desktop\ox-engine\engine\src\math\types.h \
+CMakeFiles/engine.dir/src/core/math.cpp.obj: \
+ C:\Users\lukas\Desktop\ox-engine\engine\src\core\math.cpp \
+ C:\Users\lukas\Desktop\ox-engine\engine\src\core\math.h \
  C:/Users/lukas/Desktop/ox-engine/engine/src/defines.h \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/chrono \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/bits/chrono.h \
@@ -182,19 +181,4 @@ CMakeFiles/engine.dir/src/math/math.cpp.obj: \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/bits/codecvt.h \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/bits/fstream.tcc \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/cmath \
- D:/narzedzia/MSYS2/mingw64/include/math.h \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/bits/specfun.h \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/tr1/gamma.tcc \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/tr1/special_function_util.h \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
- D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc
+ D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/bits/fstream.tcc

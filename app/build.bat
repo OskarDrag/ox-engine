@@ -22,5 +22,4 @@ IF %errorlevel% neq 0 (
     pause
     exit
 )
-
 exit

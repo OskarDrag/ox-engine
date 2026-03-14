@@ -49,10 +49,13 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     }
     
+    
     appRef->window = c_window(appConfig.name, appConfig.fullscreen, appConfig.width, appConfig.height);
-    appRef->input = c_input(appState->window.instance);
-    ox_assert(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress));
-
+    
+    appRef->renderer = c_renderer();
+    ox_assert(appRef->renderer.initialise(&appRef->window));
+    appRef->input = c_input(appRef->window.instance);
+    
     ox_info("application opened succesfully!");
 
     return 1;       
@@ -65,19 +68,21 @@ void setGameFrameCallback(void (*callback)()) {
 void mainLoop() {
     while (appRef->isRunning) {
         appRef->timeRunning = getTimeRunning();
-        glfwSwapBuffers(appRef->window.instance);
+        appRef->renderer.updateFrame();
         // all input should be done between update and reset
         appRef->input.update();
-        if (appRef->input.isKeyPressed(KEY_ESCAPE)) {
-            appRef->isRunning = false;
-        }
         // running the application side code
         ox_assert(gameFrameCallback) gameFrameCallback();
 
+        // default esc input for exiting
+        if (appRef->input.isKeyPressed(KEY_ESCAPE)) {
+            appRef->isRunning = false;
+        }
+        
         appRef->input.resetInput();
         if (glfwWindowShouldClose(appRef->window.instance)) appRef->isRunning = false;
 
-        // fps stabiliser (zmienic to na wlasny system czasowy)
+        // fps stabiliser (TODO: zmienic to na wlasny system czasowy)
         std::this_thread::sleep_for(std::chrono::nanoseconds(1666667));
         
     }
@@ -86,8 +91,10 @@ void mainLoop() {
 void shutdownProgram() {
     ox_info("closing the app");
     appRef->input.shutdown();
+    appRef->renderer.shutdown();
     glfwTerminate();
     shutdownLogger();
+    exit(0);
 }
 
 double getTimeRunning() {

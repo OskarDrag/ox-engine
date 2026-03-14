@@ -1,5 +1,7 @@
 #include "../defines.h"
 
+#include "math.h"
+
 struct GLFWwindow;
 
 class c_input {
@@ -11,7 +13,7 @@ class c_input {
         void resetInput();
         OX_API std::vector<int> getHeldKeys();
         OX_API std::vector<int> getHeldButtons();
-        OX_API void getMousePosition(float &xposition, float &yposition);
+        OX_API vec2 getMousePosition();
         OX_API float getScrollOffset();
         OX_API void setScrollOffset(float offset);
         OX_API bool isKeyPressed(int key);
@@ -29,8 +31,7 @@ class c_input {
         static void cursor_position_callback(GLFWwindow* window, double xpos, double ypos);
         static void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 
-        static float m_mousePositionx;
-        static float m_mousePositiony;
+        static vec2 m_mousePosition;
         static float m_scrollOffset;
         static float m_oldScrollOffset;
 

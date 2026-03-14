@@ -185,8 +185,11 @@ CMakeFiles/app.dir/src/entry.cpp.obj: \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/bits/fstream.tcc \
  C:/Users/lukas/Desktop/ox-engine/engine/src/core/window.h \
  C:/Users/lukas/Desktop/ox-engine/engine/src/core/input.h \
+ C:/Users/lukas/Desktop/ox-engine/engine/src/core/math.h \
+ C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/renderer.h \
+ C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/vertexArray.h \
+ C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/vertexBuffer.h \
+ C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/shader.h \
  C:/Users/lukas/Desktop/ox-engine/engine/src/entry.h \
  C:/Users/lukas/Desktop/ox-engine/engine/src/core/log.h \
- C:/Users/lukas/Desktop/ox-engine/engine/src/core/assert.h \
- C:/Users/lukas/Desktop/ox-engine/engine/src/math/math.h \
- C:/Users/lukas/Desktop/ox-engine/engine/src/math/types.h
+ C:/Users/lukas/Desktop/ox-engine/engine/src/core/assert.h

@@ -182,6 +182,7 @@ CMakeFiles/engine.dir/src/core/input.cpp.obj: \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/bits/fstream.tcc \
+ C:\Users\lukas\Desktop\ox-engine\engine\src\core\math.h \
  C:\Users\lukas\Desktop\ox-engine\engine\src\core\log.h \
  C:/Users/lukas/Desktop/ox-engine/engine/src/includes/vendor.h \
  C:/Users/lukas/Desktop/ox-engine/engine/dependencies/glad/glad.h \

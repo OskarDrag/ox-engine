@@ -185,6 +185,11 @@ CMakeFiles/engine.dir/src/core/window.cpp.obj: \
  C:\Users\lukas\Desktop\ox-engine\engine\src\core\assert.h \
  C:/Users/lukas/Desktop/ox-engine/engine/src/application.h \
  C:/Users/lukas/Desktop/ox-engine/engine/src/core/input.h \
+ C:/Users/lukas/Desktop/ox-engine/engine/src/core/math.h \
+ C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/renderer.h \
+ C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/vertexArray.h \
+ C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/vertexBuffer.h \
+ C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/shader.h \
  C:\Users\lukas\Desktop\ox-engine\engine\src\core\log.h \
  C:/Users/lukas/Desktop/ox-engine/engine/src/includes/vendor.h \
  C:/Users/lukas/Desktop/ox-engine/engine/dependencies/glad/glad.h \

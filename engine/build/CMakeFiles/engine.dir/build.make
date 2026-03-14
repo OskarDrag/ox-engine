@@ -146,11 +146,26 @@ CMakeFiles/engine.dir/src/core/log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/core/log.cpp.s"
 	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lukas\Desktop\ox-engine\engine\src\core\log.cpp -o CMakeFiles\engine.dir\src\core\log.cpp.s
 
+CMakeFiles/engine.dir/src/core/math.cpp.obj: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/core/math.cpp.obj: CMakeFiles/engine.dir/includes_CXX.rsp
+CMakeFiles/engine.dir/src/core/math.cpp.obj: C:/Users/lukas/Desktop/ox-engine/engine/src/core/math.cpp
+CMakeFiles/engine.dir/src/core/math.cpp.obj: CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\lukas\Desktop\ox-engine\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/engine.dir/src/core/math.cpp.obj"
+	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/core/math.cpp.obj -MF CMakeFiles\engine.dir\src\core\math.cpp.obj.d -o CMakeFiles\engine.dir\src\core\math.cpp.obj -c C:\Users\lukas\Desktop\ox-engine\engine\src\core\math.cpp
+
+CMakeFiles/engine.dir/src/core/math.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/core/math.cpp.i"
+	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lukas\Desktop\ox-engine\engine\src\core\math.cpp > CMakeFiles\engine.dir\src\core\math.cpp.i
+
+CMakeFiles/engine.dir/src/core/math.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/core/math.cpp.s"
+	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lukas\Desktop\ox-engine\engine\src\core\math.cpp -o CMakeFiles\engine.dir\src\core\math.cpp.s
+
 CMakeFiles/engine.dir/src/core/window.cpp.obj: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/src/core/window.cpp.obj: CMakeFiles/engine.dir/includes_CXX.rsp
 CMakeFiles/engine.dir/src/core/window.cpp.obj: C:/Users/lukas/Desktop/ox-engine/engine/src/core/window.cpp
 CMakeFiles/engine.dir/src/core/window.cpp.obj: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\lukas\Desktop\ox-engine\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/engine.dir/src/core/window.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\lukas\Desktop\ox-engine\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/engine.dir/src/core/window.cpp.obj"
 	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/core/window.cpp.obj -MF CMakeFiles\engine.dir\src\core\window.cpp.obj.d -o CMakeFiles\engine.dir\src\core\window.cpp.obj -c C:\Users\lukas\Desktop\ox-engine\engine\src\core\window.cpp
 
 CMakeFiles/engine.dir/src/core/window.cpp.i: cmake_force
@@ -160,21 +175,6 @@ CMakeFiles/engine.dir/src/core/window.cpp.i: cmake_force
 CMakeFiles/engine.dir/src/core/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/core/window.cpp.s"
 	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lukas\Desktop\ox-engine\engine\src\core\window.cpp -o CMakeFiles\engine.dir\src\core\window.cpp.s
-
-CMakeFiles/engine.dir/src/math/math.cpp.obj: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/src/math/math.cpp.obj: CMakeFiles/engine.dir/includes_CXX.rsp
-CMakeFiles/engine.dir/src/math/math.cpp.obj: C:/Users/lukas/Desktop/ox-engine/engine/src/math/math.cpp
-CMakeFiles/engine.dir/src/math/math.cpp.obj: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\lukas\Desktop\ox-engine\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/engine.dir/src/math/math.cpp.obj"
-	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/math/math.cpp.obj -MF CMakeFiles\engine.dir\src\math\math.cpp.obj.d -o CMakeFiles\engine.dir\src\math\math.cpp.obj -c C:\Users\lukas\Desktop\ox-engine\engine\src\math\math.cpp
-
-CMakeFiles/engine.dir/src/math/math.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/math/math.cpp.i"
-	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lukas\Desktop\ox-engine\engine\src\math\math.cpp > CMakeFiles\engine.dir\src\math\math.cpp.i
-
-CMakeFiles/engine.dir/src/math/math.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/math/math.cpp.s"
-	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lukas\Desktop\ox-engine\engine\src\math\math.cpp -o CMakeFiles\engine.dir\src\math\math.cpp.s
 
 CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj: CMakeFiles/engine.dir/includes_CXX.rsp
@@ -191,6 +191,51 @@ CMakeFiles/engine.dir/src/renderer/renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/renderer/renderer.cpp.s"
 	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\renderer.cpp -o CMakeFiles\engine.dir\src\renderer\renderer.cpp.s
 
+CMakeFiles/engine.dir/src/renderer/shader.cpp.obj: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/renderer/shader.cpp.obj: CMakeFiles/engine.dir/includes_CXX.rsp
+CMakeFiles/engine.dir/src/renderer/shader.cpp.obj: C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/shader.cpp
+CMakeFiles/engine.dir/src/renderer/shader.cpp.obj: CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\lukas\Desktop\ox-engine\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/engine.dir/src/renderer/shader.cpp.obj"
+	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/renderer/shader.cpp.obj -MF CMakeFiles\engine.dir\src\renderer\shader.cpp.obj.d -o CMakeFiles\engine.dir\src\renderer\shader.cpp.obj -c C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\shader.cpp
+
+CMakeFiles/engine.dir/src/renderer/shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/renderer/shader.cpp.i"
+	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\shader.cpp > CMakeFiles\engine.dir\src\renderer\shader.cpp.i
+
+CMakeFiles/engine.dir/src/renderer/shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/renderer/shader.cpp.s"
+	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\shader.cpp -o CMakeFiles\engine.dir\src\renderer\shader.cpp.s
+
+CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj: CMakeFiles/engine.dir/includes_CXX.rsp
+CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj: C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/vertexArray.cpp
+CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj: CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\lukas\Desktop\ox-engine\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj"
+	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj -MF CMakeFiles\engine.dir\src\renderer\vertexArray.cpp.obj.d -o CMakeFiles\engine.dir\src\renderer\vertexArray.cpp.obj -c C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\vertexArray.cpp
+
+CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.i"
+	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\vertexArray.cpp > CMakeFiles\engine.dir\src\renderer\vertexArray.cpp.i
+
+CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.s"
+	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\vertexArray.cpp -o CMakeFiles\engine.dir\src\renderer\vertexArray.cpp.s
+
+CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj: CMakeFiles/engine.dir/includes_CXX.rsp
+CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj: C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/vertexBuffer.cpp
+CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj: CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\lukas\Desktop\ox-engine\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj"
+	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj -MF CMakeFiles\engine.dir\src\renderer\vertexBuffer.cpp.obj.d -o CMakeFiles\engine.dir\src\renderer\vertexBuffer.cpp.obj -c C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\vertexBuffer.cpp
+
+CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.i"
+	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\vertexBuffer.cpp > CMakeFiles\engine.dir\src\renderer\vertexBuffer.cpp.i
+
+CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.s"
+	D:\narzedzia\MSYS2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\vertexBuffer.cpp -o CMakeFiles\engine.dir\src\renderer\vertexBuffer.cpp.s
+
 # Object files for target engine
 engine_OBJECTS = \
 "CMakeFiles/engine.dir/dependencies/glad/glad.c.obj" \
@@ -198,9 +243,12 @@ engine_OBJECTS = \
 "CMakeFiles/engine.dir/src/application.cpp.obj" \
 "CMakeFiles/engine.dir/src/core/input.cpp.obj" \
 "CMakeFiles/engine.dir/src/core/log.cpp.obj" \
+"CMakeFiles/engine.dir/src/core/math.cpp.obj" \
 "CMakeFiles/engine.dir/src/core/window.cpp.obj" \
-"CMakeFiles/engine.dir/src/math/math.cpp.obj" \
-"CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj"
+"CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj" \
+"CMakeFiles/engine.dir/src/renderer/shader.cpp.obj" \
+"CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj" \
+"CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
@@ -210,15 +258,18 @@ C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/dependencies/
 C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/src/application.cpp.obj
 C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/src/core/input.cpp.obj
 C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/src/core/log.cpp.obj
+C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/src/core/math.cpp.obj
 C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/src/core/window.cpp.obj
-C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/src/math/math.cpp.obj
 C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj
+C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/src/renderer/shader.cpp.obj
+C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj
+C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj
 C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/build.make
 C:/Users/lukas/Desktop/ox-engine/engine.dll: C:/Users/lukas/Desktop/ox-engine/engine/dependencies/GLFW/libglfw3.a
 C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/linkLibs.rsp
 C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/objects1.rsp
 C:/Users/lukas/Desktop/ox-engine/engine.dll: CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\lukas\Desktop\ox-engine\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library C:\Users\lukas\Desktop\ox-engine\engine.dll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\lukas\Desktop\ox-engine\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library C:\Users\lukas\Desktop\ox-engine\engine.dll"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\engine.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

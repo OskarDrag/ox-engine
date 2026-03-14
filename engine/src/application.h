@@ -3,6 +3,7 @@
 #include "defines.h"
 #include "core/window.h"
 #include "core/input.h"
+#include "renderer/renderer.h"
 
 enum e_platform {
     windows32   = 0,
@@ -18,6 +19,7 @@ struct s_appState {
     double timeRunning;
     e_platform platform;
     c_window window;
+    c_renderer renderer;
     c_input input;
 };
 

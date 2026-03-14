@@ -9,6 +9,9 @@
 #define ENABLE_DEBUG = 1
 #endif
 
+
+
+
 // types of log calls
 enum LogType {
     TYPE_INFO = 0   ,
@@ -63,9 +66,18 @@ void log(LogType type, argument... message) {
         #endif
     }
     output = buffer.str();
-    std::cout << output;
-
     fileOutput = fileBuffer.str();
+
+    
+#define COLORED_TEXT 
+
+    #ifdef COLORED_TEXT
+        std::cout << output;
+    #else
+        std::cout << fileOutput;
+    #endif
+    
+    
     insertIntoLogFile(fileOutput);
 }
 

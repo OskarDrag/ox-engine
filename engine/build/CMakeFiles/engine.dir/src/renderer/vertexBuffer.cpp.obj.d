@@ -1,6 +1,7 @@
-CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj: \
- C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\renderer.cpp \
- C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\renderer.h \
+CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj: \
+ C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\vertexBuffer.cpp \
+ C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\vertexbuffer.h \
+ C:/Users/lukas/Desktop/ox-engine/engine/src/core/math.h \
  C:/Users/lukas/Desktop/ox-engine/engine/src/defines.h \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/chrono \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/bits/chrono.h \
@@ -182,11 +183,6 @@ CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj: \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/bits/fstream.tcc \
- C:/Users/lukas/Desktop/ox-engine/engine/src/core/window.h \
- C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\vertexArray.h \
- C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\vertexBuffer.h \
- C:/Users/lukas/Desktop/ox-engine/engine/src/core/math.h \
- C:\Users\lukas\Desktop\ox-engine\engine\src\renderer\shader.h \
  C:/Users/lukas/Desktop/ox-engine/engine/src/includes/vendor.h \
  C:/Users/lukas/Desktop/ox-engine/engine/dependencies/glad/glad.h \
  C:/Users/lukas/Desktop/ox-engine/engine/dependencies/KHR/khrplatform.h \
@@ -412,7 +408,4 @@ CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj: \
  D:/narzedzia/MSYS2/mingw64/include/c++/15.2.0/cstring \
  D:/narzedzia/MSYS2/mingw64/include/string.h \
  D:/narzedzia/MSYS2/mingw64/include/sec_api/string_s.h \
- C:/Users/lukas/Desktop/ox-engine/engine/dependencies/glm/gtc/type_ptr.inl \
- C:/Users/lukas/Desktop/ox-engine/engine/src/core/assert.h \
- C:/Users/lukas/Desktop/ox-engine/engine/src/application.h \
- C:/Users/lukas/Desktop/ox-engine/engine/src/core/input.h
+ C:/Users/lukas/Desktop/ox-engine/engine/dependencies/glm/gtc/type_ptr.inl

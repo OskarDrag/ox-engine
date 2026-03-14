@@ -13,12 +13,18 @@ file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/src/core/input.cpp.obj.d"
   "CMakeFiles/engine.dir/src/core/log.cpp.obj"
   "CMakeFiles/engine.dir/src/core/log.cpp.obj.d"
+  "CMakeFiles/engine.dir/src/core/math.cpp.obj"
+  "CMakeFiles/engine.dir/src/core/math.cpp.obj.d"
   "CMakeFiles/engine.dir/src/core/window.cpp.obj"
   "CMakeFiles/engine.dir/src/core/window.cpp.obj.d"
-  "CMakeFiles/engine.dir/src/math/math.cpp.obj"
-  "CMakeFiles/engine.dir/src/math/math.cpp.obj.d"
   "CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj"
   "CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj.d"
+  "CMakeFiles/engine.dir/src/renderer/shader.cpp.obj"
+  "CMakeFiles/engine.dir/src/renderer/shader.cpp.obj.d"
+  "CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj"
+  "CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj.d"
+  "CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj"
+  "CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

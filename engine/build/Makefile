@@ -249,6 +249,30 @@ src/core/log.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/core/log.cpp.s
 .PHONY : src/core/log.cpp.s
 
+src/core/math.obj: src/core/math.cpp.obj
+.PHONY : src/core/math.obj
+
+# target to build an object file
+src/core/math.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/core/math.cpp.obj
+.PHONY : src/core/math.cpp.obj
+
+src/core/math.i: src/core/math.cpp.i
+.PHONY : src/core/math.i
+
+# target to preprocess a source file
+src/core/math.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/core/math.cpp.i
+.PHONY : src/core/math.cpp.i
+
+src/core/math.s: src/core/math.cpp.s
+.PHONY : src/core/math.s
+
+# target to generate assembly for a file
+src/core/math.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/core/math.cpp.s
+.PHONY : src/core/math.cpp.s
+
 src/core/window.obj: src/core/window.cpp.obj
 .PHONY : src/core/window.obj
 
@@ -272,30 +296,6 @@ src/core/window.s: src/core/window.cpp.s
 src/core/window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/core/window.cpp.s
 .PHONY : src/core/window.cpp.s
-
-src/math/math.obj: src/math/math.cpp.obj
-.PHONY : src/math/math.obj
-
-# target to build an object file
-src/math/math.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/math/math.cpp.obj
-.PHONY : src/math/math.cpp.obj
-
-src/math/math.i: src/math/math.cpp.i
-.PHONY : src/math/math.i
-
-# target to preprocess a source file
-src/math/math.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/math/math.cpp.i
-.PHONY : src/math/math.cpp.i
-
-src/math/math.s: src/math/math.cpp.s
-.PHONY : src/math/math.s
-
-# target to generate assembly for a file
-src/math/math.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/math/math.cpp.s
-.PHONY : src/math/math.cpp.s
 
 src/renderer/renderer.obj: src/renderer/renderer.cpp.obj
 .PHONY : src/renderer/renderer.obj
@@ -321,6 +321,78 @@ src/renderer/renderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/renderer/renderer.cpp.s
 .PHONY : src/renderer/renderer.cpp.s
 
+src/renderer/shader.obj: src/renderer/shader.cpp.obj
+.PHONY : src/renderer/shader.obj
+
+# target to build an object file
+src/renderer/shader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/renderer/shader.cpp.obj
+.PHONY : src/renderer/shader.cpp.obj
+
+src/renderer/shader.i: src/renderer/shader.cpp.i
+.PHONY : src/renderer/shader.i
+
+# target to preprocess a source file
+src/renderer/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/renderer/shader.cpp.i
+.PHONY : src/renderer/shader.cpp.i
+
+src/renderer/shader.s: src/renderer/shader.cpp.s
+.PHONY : src/renderer/shader.s
+
+# target to generate assembly for a file
+src/renderer/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/renderer/shader.cpp.s
+.PHONY : src/renderer/shader.cpp.s
+
+src/renderer/vertexArray.obj: src/renderer/vertexArray.cpp.obj
+.PHONY : src/renderer/vertexArray.obj
+
+# target to build an object file
+src/renderer/vertexArray.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj
+.PHONY : src/renderer/vertexArray.cpp.obj
+
+src/renderer/vertexArray.i: src/renderer/vertexArray.cpp.i
+.PHONY : src/renderer/vertexArray.i
+
+# target to preprocess a source file
+src/renderer/vertexArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.i
+.PHONY : src/renderer/vertexArray.cpp.i
+
+src/renderer/vertexArray.s: src/renderer/vertexArray.cpp.s
+.PHONY : src/renderer/vertexArray.s
+
+# target to generate assembly for a file
+src/renderer/vertexArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.s
+.PHONY : src/renderer/vertexArray.cpp.s
+
+src/renderer/vertexBuffer.obj: src/renderer/vertexBuffer.cpp.obj
+.PHONY : src/renderer/vertexBuffer.obj
+
+# target to build an object file
+src/renderer/vertexBuffer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj
+.PHONY : src/renderer/vertexBuffer.cpp.obj
+
+src/renderer/vertexBuffer.i: src/renderer/vertexBuffer.cpp.i
+.PHONY : src/renderer/vertexBuffer.i
+
+# target to preprocess a source file
+src/renderer/vertexBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.i
+.PHONY : src/renderer/vertexBuffer.cpp.i
+
+src/renderer/vertexBuffer.s: src/renderer/vertexBuffer.cpp.s
+.PHONY : src/renderer/vertexBuffer.s
+
+# target to generate assembly for a file
+src/renderer/vertexBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.s
+.PHONY : src/renderer/vertexBuffer.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -345,15 +417,24 @@ help:
 	@echo ... src/core/log.obj
 	@echo ... src/core/log.i
 	@echo ... src/core/log.s
+	@echo ... src/core/math.obj
+	@echo ... src/core/math.i
+	@echo ... src/core/math.s
 	@echo ... src/core/window.obj
 	@echo ... src/core/window.i
 	@echo ... src/core/window.s
-	@echo ... src/math/math.obj
-	@echo ... src/math/math.i
-	@echo ... src/math/math.s
 	@echo ... src/renderer/renderer.obj
 	@echo ... src/renderer/renderer.i
 	@echo ... src/renderer/renderer.s
+	@echo ... src/renderer/shader.obj
+	@echo ... src/renderer/shader.i
+	@echo ... src/renderer/shader.s
+	@echo ... src/renderer/vertexArray.obj
+	@echo ... src/renderer/vertexArray.i
+	@echo ... src/renderer/vertexArray.s
+	@echo ... src/renderer/vertexBuffer.obj
+	@echo ... src/renderer/vertexBuffer.i
+	@echo ... src/renderer/vertexBuffer.s
 .PHONY : help
 
 

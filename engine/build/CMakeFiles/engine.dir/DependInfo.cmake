@@ -13,9 +13,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/lukas/Desktop/ox-engine/engine/src/application.cpp" "CMakeFiles/engine.dir/src/application.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/application.cpp.obj.d"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/input.cpp" "CMakeFiles/engine.dir/src/core/input.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/core/input.cpp.obj.d"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/log.cpp" "CMakeFiles/engine.dir/src/core/log.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/core/log.cpp.obj.d"
+  "C:/Users/lukas/Desktop/ox-engine/engine/src/core/math.cpp" "CMakeFiles/engine.dir/src/core/math.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/core/math.cpp.obj.d"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/window.cpp" "CMakeFiles/engine.dir/src/core/window.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/core/window.cpp.obj.d"
-  "C:/Users/lukas/Desktop/ox-engine/engine/src/math/math.cpp" "CMakeFiles/engine.dir/src/math/math.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/math/math.cpp.obj.d"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/renderer.cpp" "CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj.d"
+  "C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/shader.cpp" "CMakeFiles/engine.dir/src/renderer/shader.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/renderer/shader.cpp.obj.d"
+  "C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/vertexArray.cpp" "CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj.d"
+  "C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/vertexBuffer.cpp" "CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
