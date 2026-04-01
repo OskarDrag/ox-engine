@@ -55,6 +55,12 @@ struct vec4 {
 
 OX_API vec2 vec2zero();
 
+OX_API vec2 vec2one();
+
 OX_API vec3 vec3zero();
 
+OX_API vec3 vec3one();
+
 OX_API vec4 vec4zero();
+
+OX_API vec4 vec4one();

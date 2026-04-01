@@ -11,6 +11,7 @@ set(OLD_GLOB
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/window.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/renderer.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/shader.cpp"
+  "C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/texture.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/vertexArray.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/vertexBuffer.cpp"
   )

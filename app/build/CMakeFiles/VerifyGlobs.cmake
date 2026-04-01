@@ -5,6 +5,8 @@
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/lukas/Desktop/ox-engine/app/src/*.cpp")
 set(OLD_GLOB
   "C:/Users/lukas/Desktop/ox-engine/app/src/entry.cpp"
+  "C:/Users/lukas/Desktop/ox-engine/app/src/func.cpp"
+  "C:/Users/lukas/Desktop/ox-engine/app/src/settings.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

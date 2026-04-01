@@ -13,6 +13,10 @@ enum e_platform {
     mac         = 4,
 };
 
+struct s_settings {
+    s_settingsRenderer renderer;
+};
+
 struct s_appState {
     std::string name;
     bool isRunning;
@@ -21,6 +25,7 @@ struct s_appState {
     c_window window;
     c_renderer renderer;
     c_input input;
+    s_settings settings;
 };
 
 struct s_appConfig {
@@ -29,6 +34,8 @@ struct s_appConfig {
     uint width;
     uint height;
 };
+
+
 
 OX_API bool startupProgram(s_appState* appState, s_appConfig appConfig);
 

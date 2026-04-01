@@ -7,7 +7,7 @@ rmdir /q /s build
 mkdir build
 
 REM configurating and building the project using CMake
-cmake -S . -B build -G "MinGW Makefiles" -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc
+cmake -S . -B build -G "Ninja"
 
 IF %errorlevel% neq 0 (
     ECHO [ERROR] CMake configuration failed.

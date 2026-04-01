@@ -6,9 +6,6 @@
 #include "core/assert.h"
 #include "core/window.h"
 
-
-
-
 static void (*gameFrameCallback)() = nullptr;
 static s_appState* appRef;
 
@@ -36,9 +33,7 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
     ox_info("starting the application . . . ");
     ox_info("initialising subsystems . . . ");
 
-
-
-    ox_info("initialising succesfull");
+    
 
     // opening glfw library
     ox_assert(glfwInit());
@@ -53,8 +48,11 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
     appRef->window = c_window(appConfig.name, appConfig.fullscreen, appConfig.width, appConfig.height);
     
     appRef->renderer = c_renderer();
+    appRef->renderer.setShaderPath("data/shaders/");
     ox_assert(appRef->renderer.initialise(&appRef->window));
     appRef->input = c_input(appRef->window.instance);
+
+    ox_info("initialising succesfull");
     
     ox_info("application opened succesfully!");
 
@@ -81,10 +79,6 @@ void mainLoop() {
         
         appRef->input.resetInput();
         if (glfwWindowShouldClose(appRef->window.instance)) appRef->isRunning = false;
-
-        // fps stabiliser (TODO: zmienic to na wlasny system czasowy)
-        std::this_thread::sleep_for(std::chrono::nanoseconds(1666667));
-        
     }
 }
 

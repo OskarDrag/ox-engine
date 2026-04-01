@@ -5,6 +5,8 @@
 struct GLFWwindow;
 struct GLFWmonitor;
 
+void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+
 class c_window {
     public:
         c_window() = default;

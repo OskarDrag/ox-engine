@@ -1,11 +1,17 @@
+#pragma once
+
 #include "application.h"
+#include "defines.h"
 
 // entry point to the application
 
-void gameFrame();
-
 extern s_appConfig appConfig;
+
+#ifdef ENTRY_POINT
+
 s_appState appState;
+
+void gameFrame();
 
 int main() {
     if (startupProgram(&appState, appConfig)) {
@@ -18,6 +24,7 @@ int main() {
     return -1;
 }
 
-// often used stuff like this will have the appState prefix deleted and used the ox_ prefix so it will be easier to type
+#endif
 
+// often used stuff like this will have the appState prefix deleted and used the ox_ prefix so it will be easier to type
 #define ox_input appState.input

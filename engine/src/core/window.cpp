@@ -20,13 +20,15 @@ c_window::c_window(std::string windowName, bool fullscreenMode, uint windowWidth
     }
     
     ox_assert(m_create());
+    glfwSetFramebufferSizeCallback(instance, framebuffer_size_callback);  
 }
 
 float c_window::getAspectRatio() {
-    if (fullscreen == true) {
-        return screenWidth / screenHeight;
-    }
-    return width / height;
+    int x, y;
+    x = width;
+    y = height;
+    glfwGetFramebufferSize(instance, &x, &y);
+    return (float)x / (float)y;
 }
 
 bool c_window::m_create() {
@@ -39,3 +41,7 @@ bool c_window::m_create() {
     glfwMakeContextCurrent(instance);
     return 1;
 }
+
+void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
+    glViewport(0, 0, width, height);
+}  
