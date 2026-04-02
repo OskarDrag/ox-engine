@@ -46,10 +46,11 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
     
     
     appRef->window = c_window(appConfig.name, appConfig.fullscreen, appConfig.width, appConfig.height);
+    appRef->camera = c_camera();
     
     appRef->renderer = c_renderer();
     appRef->renderer.setShaderPath("data/shaders/");
-    ox_assert(appRef->renderer.initialise(&appRef->window));
+    ox_assert(appRef->renderer.initialise(&appRef->window, &appRef->camera));
     appRef->input = c_input(appRef->window.instance);
 
     ox_info("initialising succesfull");

@@ -28,3 +28,4 @@ int main() {
 
 // often used stuff like this will have the appState prefix deleted and used the ox_ prefix so it will be easier to type
 #define ox_input appState.input
+#define ox_cam appState.camera

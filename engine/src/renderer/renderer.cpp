@@ -30,8 +30,9 @@ static vec2 drawuv[4] = {
     {0.0f, 1.0f},
  };
 
-bool c_renderer::initialise(c_window* window) {
+bool c_renderer::initialise(c_window* window, c_camera* camera) {
     m_windowRef = window;
+    m_cameraRef = camera;
 
     ox_assert(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress));
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -62,7 +63,12 @@ void c_renderer::updateFrame() {
     glClearColor(0.5f, 0.5f, 0.9f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
-    projection = glm::ortho(-m_windowRef->getAspectRatio(), m_windowRef->getAspectRatio(), -1.0f, 1.0f, -100.0f, 100.0f);
+    //projection = glm::ortho(-m_windowRef->getAspectRatio(), m_windowRef->getAspectRatio(), -1.0f, 1.0f, -100.0f, 100.0f);
+    projection = glm::perspective(glm::radians(60.0f), m_windowRef->getAspectRatio(), 0.01f, 100.0f);
+
+    vec3 cameraPosition = m_cameraRef->getLocation();
+
+    view = glm::translate(glm::mat4(1.0f), glm::vec3(cameraPosition.x, cameraPosition.y, cameraPosition.z - 2.0f));
 
     m_shader.run();
     m_shader.setMat4("model", glm::value_ptr(model));

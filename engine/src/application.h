@@ -3,6 +3,7 @@
 #include "defines.h"
 #include "core/window.h"
 #include "core/input.h"
+#include "core/camera.h"
 #include "renderer/renderer.h"
 
 enum e_platform {
@@ -25,6 +26,7 @@ struct s_appState {
     c_window window;
     c_renderer renderer;
     c_input input;
+    c_camera camera;
     s_settings settings;
 };
 

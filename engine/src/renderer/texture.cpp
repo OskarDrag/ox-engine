@@ -25,7 +25,6 @@ c_texture::c_texture(std::string texturePath) {
             m_type = PNG;
             break;
         default:
-            ox_error("Wrong number of channels for teture: " + m_path + " have been detected, expected format: .jpg/.png");
             break;
     }
     glGenTextures(1, &textureID);
@@ -40,6 +39,9 @@ c_texture::c_texture(std::string texturePath) {
             glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, m_width, m_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
             glGenerateMipmap(GL_TEXTURE_2D);
         }
+    }
+    else {
+        ox_error("Failed to load texture: ", texturePath);
     }
     glBindTexture(GL_TEXTURE_2D, 0);
     stbi_image_free(data);

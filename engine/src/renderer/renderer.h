@@ -3,6 +3,7 @@
 #include "../defines.h"
 
 #include "../core/window.h"
+#include "../core/camera.h"
 
 #include "vertexArray.h"
 #include "vertexBuffer.h"
@@ -15,13 +16,14 @@ struct s_settingsRenderer {
 
 class c_renderer {
     public:
-        bool initialise(c_window* window);
+        bool initialise(c_window* window, c_camera* camera);
         void updateFrame();
         void shutdown();
         std::string getShaderPath();
         void setShaderPath(std::string path);
     private:
         c_window* m_windowRef;
+        c_camera* m_cameraRef;
         c_vertexBuffer m_buffer;
         c_shader m_shader;
         c_vertexArray m_array;
