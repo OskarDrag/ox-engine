@@ -16,5 +16,6 @@ target_link_options(${PROJECT_NAME} PRIVATE
     -static-libgcc
     -static-libstdc++
     -Wl,-Bstatic,--whole-archive
+    -lwinpthread
     -Wl,--no-whole-archive,-Bdynamic
 )
