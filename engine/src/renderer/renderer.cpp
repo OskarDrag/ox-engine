@@ -37,6 +37,7 @@ bool c_renderer::initialise(c_window* window, c_camera* camera) {
     ox_assert(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress));
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glEnable(GL_BLEND);
+    glEnable(GL_DEPTH_TEST);
 
     textureSystemInitialise();
 
@@ -60,26 +61,65 @@ bool c_renderer::initialise(c_window* window, c_camera* camera) {
 }
 
 void c_renderer::updateFrame() {
+
     glClearColor(0.5f, 0.5f, 0.9f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+
 
     //projection = glm::ortho(-m_windowRef->getAspectRatio(), m_windowRef->getAspectRatio(), -1.0f, 1.0f, -100.0f, 100.0f);
-    projection = glm::perspective(glm::radians(60.0f), m_windowRef->getAspectRatio(), 0.01f, 100.0f);
 
-    vec3 cameraPosition = m_cameraRef->getLocation();
-
-    view = glm::translate(glm::mat4(1.0f), glm::vec3(cameraPosition.x, cameraPosition.y, cameraPosition.z - 2.0f));
-
-    m_shader.run();
-    m_shader.setMat4("model", glm::value_ptr(model));
-    m_shader.setMat4("view", glm::value_ptr(view));
+    projection = glm::perspective(glm::radians(m_cameraRef->getFOV()), m_windowRef->getAspectRatio(), 0.01f, 100.0f);
     m_shader.setMat4("projection", glm::value_ptr(projection));
 
-    c_texture tex("data/test/textures/Lawliet L.jpg");
-    tex.bind();
+    vec3 cameraPosition = m_cameraRef->getLocation();
+    vec3 cameraRotation = m_cameraRef->getRotation();
+    view = glm::mat4(1.0f);
+    view = glm::rotate(view, glm::radians(cameraRotation.x),glm::vec3(1.0f, 0.0f, 0.0f));
+    view = glm::rotate(view, glm::radians(cameraRotation.y),glm::vec3(0.0f, 1.0f, 0.0f));
+    view = glm::rotate(view, glm::radians(cameraRotation.z),glm::vec3(0.0f, 0.0f, 1.0f));
+    view = glm::translate(view, glm::vec3(cameraPosition.x, cameraPosition.y, cameraPosition.z));
+    
+    m_shader.setMat4("view", glm::value_ptr(view));
+
+    m_shader.run();
+    c_texture texture("data/test/textures/L.jpg");
+    texture.bind();
     m_array.bind();
 
+    model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.5f));
+    model = glm::rotate(model, glm::radians(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    m_shader.setMat4("model", glm::value_ptr(model));
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+    model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -0.5f));
+    model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    m_shader.setMat4("model", glm::value_ptr(model));
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+    model = glm::translate(glm::mat4(1.0f), glm::vec3(0.5f, 0.0f, 0.0f));
+    model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    m_shader.setMat4("model", glm::value_ptr(model));
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+    model = glm::translate(glm::mat4(1.0f), glm::vec3(-0.5f, 0.0f, 0.0f));
+    model = glm::rotate(model, glm::radians(-90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    m_shader.setMat4("model", glm::value_ptr(model));
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+    model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.5f, 0.0f));
+    model = glm::rotate(model, glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+    m_shader.setMat4("model", glm::value_ptr(model));
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+    model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -0.5f, 0.0f));
+    model = glm::rotate(model, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+    m_shader.setMat4("model", glm::value_ptr(model));
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+    
+
+    
     glfwSwapBuffers(m_windowRef->instance);
 }
 

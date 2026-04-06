@@ -1,14 +1,41 @@
 #include "camera.h"
 
 #include "../includes/vendor.h"
+#include "log.h"
 
-static glm::vec3 cameraPosition = glm::vec3(0.0f);
+static vec3 cameraPosition = {0.0f, 0.0f, 0.0f};
+static vec3 cameraRotation = {0.0f, 0.0f, 0.0f};
+
+static const glm::vec3 target = glm::vec3(0.0f, 0.0f, 0.0f);
+static const glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f);
+
+static glm::vec3 cameraDirection;
+
+static glm::vec3 cameraRight;
+static glm::vec3 cameraUp;
+static glm::vec3 cameraForward;
+
+static float cameraFOV = 90.0f;
+float c_camera::m_movementSpeed = 0.01f;
 
 void c_camera::create() {
 
 }
 
-void c_camera::move(axis axis, float value) {
+void c_camera::update() {
+    glm::vec3 pos = glm::vec3(cameraPosition.x, cameraPosition.y, cameraPosition.z);
+    glm::vec3 dir;
+    dir.z = cos(glm::radians(cameraRotation.y)) * cos(glm::radians(cameraRotation.x));
+    dir.y = sin(glm::radians(cameraRotation.x));
+    dir.x = sin(glm::radians(cameraRotation.y)) * cos(glm::radians(cameraRotation.x));
+    
+    cameraDirection = glm::normalize(dir);
+    cameraRight = glm::normalize(glm::cross(up, cameraDirection));
+    cameraUp = glm::normalize(glm::cross(cameraDirection, cameraRight));
+    cameraForward = cameraDirection;
+}
+
+void c_camera::moveOnAxis(axis axis, float value) {
     switch (axis)
     {
     case X:
@@ -23,16 +50,89 @@ void c_camera::move(axis axis, float value) {
     default:
         break;
     }
-    glm::mat4 view = glm::translate(glm::mat4(1.0f), glm::vec3(cameraPosition.x, cameraPosition.y, cameraPosition.z));
+}
+
+void c_camera::move(direction direction, float value) {
+    switch (direction) {
+        case RIGHT:
+            cameraPosition.x -= cameraRight.x * value;
+            cameraPosition.y -= cameraRight.y * value;
+            cameraPosition.z += cameraRight.z * value;
+            break;
+        case UP:
+            cameraPosition.x += cameraUp.x * value;
+            cameraPosition.y -= cameraUp.y * value;
+            cameraPosition.z -= cameraUp.z * value;
+            break;
+        case FORWARD:
+            cameraPosition.x -= cameraForward.x * value;
+            cameraPosition.y += cameraForward.y * value;
+            cameraPosition.z += cameraForward.z * value;
+            break;
+        default:
+            break;
+    }
+}
+
+void c_camera::rotateOnAxis(axis axis, float value) {
+    switch (axis)
+    {
+    case X:
+        cameraRotation.x -= value;
+        break;
+    case Y:
+        cameraRotation.y -= value;
+        break;
+    case Z:
+        cameraRotation.z += value;
+        break;
+    default:
+        break;
+    }
+
+    if(cameraRotation.x > 89.0f)
+    cameraRotation.x =  89.0f;
+    if(cameraRotation.x < -89.0f)
+    cameraRotation.x = -89.0f;
 
 }
 
 void c_camera::setLocation(float x, float y, float z) {
+    cameraPosition = {x, y, z};
+}
 
+void c_camera::setRotation(float x, float y, float z) {
+    cameraRotation = {x, y, z};
+}
+
+void c_camera::setFOV(float value) {
+    cameraFOV = value;
+}
+
+void c_camera::setMovementSpeed(float value) {
+    if (value < 0) {
+        m_movementSpeed = 0;
+        return;
+    }
+    m_movementSpeed = value;
 }
 
 vec3 c_camera::getLocation() {
     return vec3 {
         cameraPosition.x, cameraPosition.y, cameraPosition.z
     };
+}
+
+vec3 c_camera::getRotation() {
+    return vec3 {
+        cameraRotation.x, cameraRotation.y, cameraRotation.z
+    };
+}
+
+float c_camera::getFOV() {
+    return cameraFOV;
+}
+
+float c_camera::getMovementSpeed() {
+    return m_movementSpeed;
 }

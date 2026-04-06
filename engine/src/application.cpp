@@ -73,6 +73,8 @@ void mainLoop() {
         // running the application side code
         ox_assert(gameFrameCallback) gameFrameCallback();
 
+        appRef->camera.update();
+
         // default esc input for exiting
         if (appRef->input.isKeyPressed(KEY_ESCAPE)) {
             appRef->isRunning = false;
