@@ -106,6 +106,14 @@ void c_camera::setRotation(float x, float y, float z) {
 }
 
 void c_camera::setFOV(float value) {
+    if (value > 179) {
+        cameraFOV = 179;
+        return;
+    }
+    if (value < 1) {
+        cameraFOV = 1;
+        return;
+    }
     cameraFOV = value;
 }
 
