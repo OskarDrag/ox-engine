@@ -83,7 +83,8 @@ void c_renderer::updateFrame() {
     m_shader.setMat4("view", glm::value_ptr(view));
 
     m_shader.run();
-    c_texture texture("data/test/textures/L.jpg");
+    
+    c_texture texture("data/test/textures/Texture 1.jpg");
     texture.bind();
     m_array.bind();
 

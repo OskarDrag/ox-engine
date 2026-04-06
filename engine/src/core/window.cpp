@@ -28,6 +28,9 @@ float c_window::getAspectRatio() {
     x = width;
     y = height;
     glfwGetFramebufferSize(instance, &x, &y);
+    if (y == 0 || x == 0) {
+        return 0.0f;
+    }
     return (float)x / (float)y;
 }
 
