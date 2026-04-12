@@ -1,0 +1,6 @@
+*.log
+app/build/
+development/
+engine/build/
+
+git-project-pusher.exe
