@@ -71,6 +71,7 @@ build CMakeFiles/app.dir/src/settings.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/
 # Link the executable C:\Users\lukas\Desktop\ox-engine\app.exe
 
 build C$:/Users/lukas/Desktop/ox-engine/app.exe: CXX_EXECUTABLE_LINKER__app_ CMakeFiles/app.dir/src/entry.cpp.obj CMakeFiles/app.dir/src/settings.cpp.obj | C$:/Users/lukas/Desktop/ox-engine/app/../engine.dll.a
+  LINK_FLAGS = -static-libgcc -static-libstdc++ -Wl,-Bstatic,--whole-archive -lwinpthread -Wl,-Bdynamic,--no-whole-archive
   LINK_LIBRARIES = C:/Users/lukas/Desktop/ox-engine/app/../engine.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\app.dir
   POST_BUILD = cd .
