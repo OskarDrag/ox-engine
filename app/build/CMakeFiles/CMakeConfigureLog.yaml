@@ -29,6 +29,7 @@ events:
       - "ninja"
       - "samu"
     candidate_directories:
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -42,6 +43,15 @@ events:
       - "C:/Users/lukas/AppData/Local/Microsoft/WindowsApps/"
       - "D:/aplikacje/Microsoft VS Code/bin/"
     searched_directories:
+      - "D:/aplikacje/Microsoft VS Code/ninja-build.com"
+      - "D:/aplikacje/Microsoft VS Code/ninja-build.exe"
+      - "D:/aplikacje/Microsoft VS Code/ninja-build"
+      - "D:/aplikacje/Microsoft VS Code/ninja.com"
+      - "D:/aplikacje/Microsoft VS Code/ninja.exe"
+      - "D:/aplikacje/Microsoft VS Code/ninja"
+      - "D:/aplikacje/Microsoft VS Code/samu.com"
+      - "D:/aplikacje/Microsoft VS Code/samu.exe"
+      - "D:/aplikacje/Microsoft VS Code/samu"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/ninja-build.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/ninja-build.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/ninja-build"
@@ -112,6 +122,7 @@ events:
     found: "D:/narzedzia/ninja/ninja.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -124,8 +135,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -152,6 +161,7 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -165,6 +175,27 @@ events:
       - "C:/Users/lukas/AppData/Local/Microsoft/WindowsApps/"
       - "D:/aplikacje/Microsoft VS Code/bin/"
     searched_directories:
+      - "D:/aplikacje/Microsoft VS Code/cc.com"
+      - "D:/aplikacje/Microsoft VS Code/cc.exe"
+      - "D:/aplikacje/Microsoft VS Code/cc"
+      - "D:/aplikacje/Microsoft VS Code/gcc.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc"
+      - "D:/aplikacje/Microsoft VS Code/cl.com"
+      - "D:/aplikacje/Microsoft VS Code/cl.exe"
+      - "D:/aplikacje/Microsoft VS Code/cl"
+      - "D:/aplikacje/Microsoft VS Code/bcc.com"
+      - "D:/aplikacje/Microsoft VS Code/bcc.exe"
+      - "D:/aplikacje/Microsoft VS Code/bcc"
+      - "D:/aplikacje/Microsoft VS Code/xlc.com"
+      - "D:/aplikacje/Microsoft VS Code/xlc.exe"
+      - "D:/aplikacje/Microsoft VS Code/xlc"
+      - "D:/aplikacje/Microsoft VS Code/icx.com"
+      - "D:/aplikacje/Microsoft VS Code/icx.exe"
+      - "D:/aplikacje/Microsoft VS Code/icx"
+      - "D:/aplikacje/Microsoft VS Code/clang.com"
+      - "D:/aplikacje/Microsoft VS Code/clang.exe"
+      - "D:/aplikacje/Microsoft VS Code/clang"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/cc.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/cc.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/cc"
@@ -337,6 +368,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/cc.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -349,8 +381,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -378,6 +408,7 @@ events:
     found: "D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -390,8 +421,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "message-v1"
     backtrace:
@@ -435,6 +464,7 @@ events:
       - "ar"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -451,6 +481,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/ar.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -463,8 +494,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -486,6 +515,7 @@ events:
       - "ranlib"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -502,6 +532,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -514,8 +545,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -537,6 +566,7 @@ events:
       - "strip"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -553,6 +583,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/strip.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -565,8 +596,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -588,6 +617,7 @@ events:
       - "ld"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -604,6 +634,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/ld.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -616,8 +647,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -639,6 +668,7 @@ events:
       - "nm"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -655,6 +685,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/nm.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -667,8 +698,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -690,6 +719,7 @@ events:
       - "objdump"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -706,6 +736,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/objdump.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -718,8 +749,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -741,6 +770,7 @@ events:
       - "objcopy"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -757,6 +787,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/objcopy.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -769,8 +800,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -792,6 +821,7 @@ events:
       - "readelf"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -808,6 +838,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/readelf.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -820,8 +851,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -843,6 +872,7 @@ events:
       - "dlltool"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -859,6 +889,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/dlltool.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -871,8 +902,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -894,6 +923,7 @@ events:
       - "addr2line"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -910,6 +940,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/addr2line.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -922,8 +953,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -945,6 +974,7 @@ events:
       - "tapi"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -960,6 +990,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/tapi.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/tapi.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/tapi"
+      - "D:/aplikacje/Microsoft VS Code/tapi.com"
+      - "D:/aplikacje/Microsoft VS Code/tapi.exe"
+      - "D:/aplikacje/Microsoft VS Code/tapi"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/tapi.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/tapi.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/tapi"
@@ -996,6 +1029,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -1008,8 +1042,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -1034,6 +1066,7 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1049,6 +1082,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar-15.2.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar-15.2.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar-15.2"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar-15.2.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar-15.2.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar-15.2"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-15.2.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-15.2.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-15.2"
@@ -1085,6 +1121,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar-15.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar-15.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar-15"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar-15.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar-15.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar-15"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-15.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-15.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-15"
@@ -1121,6 +1160,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar15.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar15.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar15"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar15.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar15.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar15"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar15.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar15.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar15"
@@ -1158,6 +1200,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -1170,8 +1213,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -1196,6 +1237,7 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1211,6 +1253,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib-15.2.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib-15.2.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib-15.2"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib-15.2.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib-15.2.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib-15.2"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-15.2.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-15.2.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-15.2"
@@ -1247,6 +1292,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib-15.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib-15.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib-15"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib-15.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib-15.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib-15"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-15.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-15.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-15"
@@ -1283,6 +1331,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib15.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib15.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib15"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib15.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib15.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib15"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib15.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib15.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib15"
@@ -1320,6 +1371,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -1332,8 +1384,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -1365,6 +1415,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/c++.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -1377,8 +1428,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -1406,6 +1455,7 @@ events:
     found: "D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -1418,8 +1468,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "message-v1"
     backtrace:
@@ -1466,6 +1514,7 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1481,6 +1530,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar-15.2.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar-15.2.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar-15.2"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar-15.2.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar-15.2.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar-15.2"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-15.2.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-15.2.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-15.2"
@@ -1517,6 +1569,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar-15.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar-15.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar-15"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar-15.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar-15.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar-15"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-15.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-15.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-15"
@@ -1553,6 +1608,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar15.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar15.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar15"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar15.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar15.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ar15"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar15.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar15.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar15"
@@ -1590,6 +1648,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -1602,8 +1661,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -1628,6 +1685,7 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "D:/narzedzia/MSYS2/mingw64/bin/"
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1643,6 +1701,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib-15.2.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib-15.2.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib-15.2"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib-15.2.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib-15.2.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib-15.2"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-15.2.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-15.2.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-15.2"
@@ -1679,6 +1740,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib-15.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib-15.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib-15"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib-15.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib-15.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib-15"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-15.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-15.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-15"
@@ -1715,6 +1779,9 @@ events:
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib15.com"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib15.exe"
       - "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib15"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib15.com"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib15.exe"
+      - "D:/aplikacje/Microsoft VS Code/gcc-ranlib15"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib15.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib15.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib15"
@@ -1752,6 +1819,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -1764,8 +1832,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
   -
     kind: "find-v1"
     backtrace:
@@ -1789,6 +1855,7 @@ events:
       - "windres"
       - "windres"
     candidate_directories:
+      - "D:/aplikacje/Microsoft VS Code/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1814,6 +1881,9 @@ events:
       - "C:/Program Files (x86)/app/sbin/"
       - "C:/Program Files (x86)/app/"
     searched_directories:
+      - "D:/aplikacje/Microsoft VS Code/windres.com"
+      - "D:/aplikacje/Microsoft VS Code/windres.exe"
+      - "D:/aplikacje/Microsoft VS Code/windres"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/windres.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/windres.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/windres"
@@ -1842,6 +1912,7 @@ events:
     found: "D:/narzedzia/MSYS2/mingw64/bin/windres.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\aplikacje\\Microsoft VS Code"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -1854,8 +1925,6 @@ events:
         - "D:\\narzedzia\\Git\\cmd"
         - "C:\\Users\\lukas\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\aplikacje\\Microsoft VS Code\\bin"
-        - "D:\\narzedzia\\MSYS2\\mingw64\\bin"
-        - "D:\\narzedzia\\ninja"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/app"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -1871,8 +1940,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-ucj53b"
-      binary: "C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-ucj53b"
+      source: "C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-mhfu7e"
+      binary: "C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-mhfu7e"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1881,10 +1950,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-ucj53b'
+        Change Dir: 'C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-mhfu7e'
         
-        Run Build Command(s): D:/narzedzia/ninja/ninja.exe -v cmTC_b76c9
-        [1/2] D:\\narzedzia\\MSYS2\\mingw64\\bin\\cc.exe   -v -o CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj -c D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): D:/narzedzia/ninja/ninja.exe -v cmTC_d5826
+        [1/2] D:\\narzedzia\\MSYS2\\mingw64\\bin\\cc.exe   -v -o CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj -c D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=D:\\narzedzia\\MSYS2\\mingw64\\bin\\cc.exe
         Target: x86_64-w64-mingw32
@@ -1892,8 +1961,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b76c9.dir/'
-         D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b76c9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\lukas\\AppData\\Local\\Temp\\ccX9eWBz.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_d5826.dir/'
+         D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d5826.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\lukas\\AppData\\Local\\Temp\\ccxpWqC5.s
         GNU C23 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1912,13 +1981,13 @@ events:
          D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: feaaa8b8d0ead308dc62d839201f7330
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b76c9.dir/'
-         D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj C:\\Users\\lukas\\AppData\\Local\\Temp\\ccX9eWBz.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_d5826.dir/'
+         D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj C:\\Users\\lukas\\AppData\\Local\\Temp\\ccxpWqC5.s
         GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45
         COMPILER_PATH=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.'
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\narzedzia\\MSYS2\\mingw64\\bin\\cc.exe  -v -Wl,-v CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj -o cmTC_b76c9.exe -Wl,--out-implib,libcmTC_b76c9.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.'
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\narzedzia\\MSYS2\\mingw64\\bin\\cc.exe  -v -Wl,-v CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj -o cmTC_d5826.exe -Wl,--out-implib,libcmTC_d5826.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
         COLLECT_GCC=D:\\narzedzia\\MSYS2\\mingw64\\bin\\cc.exe
         COLLECT_LTO_WRAPPER=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -1929,12 +1998,12 @@ events:
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
         COMPILER_PATH=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b76c9.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_b76c9.'
-         D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccJUOw1A.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_b76c9.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_b76c9.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d5826.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_d5826.'
+         D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccP8f04a.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_d5826.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_d5826.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccJUOw1A.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_b76c9.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_b76c9.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccP8f04a.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_d5826.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_d5826.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b76c9.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_b76c9.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d5826.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_d5826.'
         
       exitCode: 0
   -
@@ -1967,10 +2036,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-ucj53b']
+        ignore line: [Change Dir: 'C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-mhfu7e']
         ignore line: []
-        ignore line: [Run Build Command(s): D:/narzedzia/ninja/ninja.exe -v cmTC_b76c9]
-        ignore line: [[1/2] D:\\narzedzia\\MSYS2\\mingw64\\bin\\cc.exe   -v -o CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj -c D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): D:/narzedzia/ninja/ninja.exe -v cmTC_d5826]
+        ignore line: [[1/2] D:\\narzedzia\\MSYS2\\mingw64\\bin\\cc.exe   -v -o CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj -c D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\narzedzia\\MSYS2\\mingw64\\bin\\cc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -1978,8 +2047,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b76c9.dir/']
-        ignore line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b76c9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\lukas\\AppData\\Local\\Temp\\ccX9eWBz.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_d5826.dir/']
+        ignore line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d5826.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\lukas\\AppData\\Local\\Temp\\ccxpWqC5.s]
         ignore line: [GNU C23 (Rev8  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1998,8 +2067,8 @@ events:
         ignore line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: feaaa8b8d0ead308dc62d839201f7330]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b76c9.dir/']
-        ignore line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj C:\\Users\\lukas\\AppData\\Local\\Temp\\ccX9eWBz.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_d5826.dir/']
+        ignore line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj C:\\Users\\lukas\\AppData\\Local\\Temp\\ccxpWqC5.s]
         ignore line: [GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45]
         ignore line: [COMPILER_PATH=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/]
@@ -2010,8 +2079,8 @@ events:
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\narzedzia\\MSYS2\\mingw64\\bin\\cc.exe  -v -Wl -v CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj -o cmTC_b76c9.exe -Wl --out-implib libcmTC_b76c9.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\narzedzia\\MSYS2\\mingw64\\bin\\cc.exe  -v -Wl -v CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj -o cmTC_d5826.exe -Wl --out-implib libcmTC_d5826.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\narzedzia\\MSYS2\\mingw64\\bin\\cc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
@@ -2029,13 +2098,13 @@ events:
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b76c9.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_b76c9.']
-        link line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccJUOw1A.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_b76c9.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_b76c9.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d5826.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_d5826.']
+        link line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccP8f04a.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_d5826.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_d5826.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccJUOw1A.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccP8f04a.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -2057,7 +2126,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_b76c9.exe] ==> ignore
+          arg [cmTC_d5826.exe] ==> ignore
           arg [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
           arg [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -2067,9 +2136,9 @@ events:
           arg [-LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_b76c9.dll.a] ==> ignore
+          arg [libcmTC_d5826.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2094,7 +2163,7 @@ events:
           arg [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
           arg [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccJUOw1A.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_b76c9.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_b76c9.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_b76c9.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccP8f04a.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_d5826.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_d5826.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_d5826.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'C': D:/narzedzia/MSYS2/mingw64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [gcc_eh]
         remove lib [msvcrt]
@@ -2135,8 +2204,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-s9nljz"
-      binary: "C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-s9nljz"
+      source: "C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-g89muh"
+      binary: "C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-g89muh"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2146,10 +2215,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-s9nljz'
+        Change Dir: 'C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-g89muh'
         
-        Run Build Command(s): D:/narzedzia/ninja/ninja.exe -v cmTC_9bbd6
-        [1/2] D:\\narzedzia\\MSYS2\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj -c D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): D:/narzedzia/ninja/ninja.exe -v cmTC_47d13
+        [1/2] D:\\narzedzia\\MSYS2\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj -c D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=D:\\narzedzia\\MSYS2\\mingw64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
@@ -2157,8 +2226,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_9bbd6.dir/'
-         D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9bbd6.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\lukas\\AppData\\Local\\Temp\\cc5XUSlT.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_47d13.dir/'
+         D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_47d13.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\lukas\\AppData\\Local\\Temp\\ccs6XGki.s
         GNU C++17 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -2183,13 +2252,13 @@ events:
          D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_9bbd6.dir/'
-         D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\lukas\\AppData\\Local\\Temp\\cc5XUSlT.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_47d13.dir/'
+         D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\lukas\\AppData\\Local\\Temp\\ccs6XGki.s
         GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45
         COMPILER_PATH=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\narzedzia\\MSYS2\\mingw64\\bin\\c++.exe  -v -Wl,-v CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_9bbd6.exe -Wl,--out-implib,libcmTC_9bbd6.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\narzedzia\\MSYS2\\mingw64\\bin\\c++.exe  -v -Wl,-v CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_47d13.exe -Wl,--out-implib,libcmTC_47d13.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
         COLLECT_GCC=D:\\narzedzia\\MSYS2\\mingw64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -2200,12 +2269,12 @@ events:
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
         COMPILER_PATH=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9bbd6.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_9bbd6.'
-         D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccbVRnFY.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_9bbd6.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9bbd6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_47d13.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_47d13.'
+         D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccA8fXnn.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_47d13.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_47d13.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccbVRnFY.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_9bbd6.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9bbd6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccA8fXnn.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_47d13.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_47d13.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9bbd6.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_9bbd6.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_47d13.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_47d13.'
         
       exitCode: 0
   -
@@ -2244,10 +2313,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-s9nljz']
+        ignore line: [Change Dir: 'C:/Users/lukas/Desktop/ox-engine/app/build/CMakeFiles/CMakeScratch/TryCompile-g89muh']
         ignore line: []
-        ignore line: [Run Build Command(s): D:/narzedzia/ninja/ninja.exe -v cmTC_9bbd6]
-        ignore line: [[1/2] D:\\narzedzia\\MSYS2\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj -c D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): D:/narzedzia/ninja/ninja.exe -v cmTC_47d13]
+        ignore line: [[1/2] D:\\narzedzia\\MSYS2\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj -c D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\narzedzia\\MSYS2\\mingw64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -2255,8 +2324,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_9bbd6.dir/']
-        ignore line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9bbd6.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\lukas\\AppData\\Local\\Temp\\cc5XUSlT.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_47d13.dir/']
+        ignore line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT D:/aplikacje/cmake-4.2.0-rc1-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_47d13.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\lukas\\AppData\\Local\\Temp\\ccs6XGki.s]
         ignore line: [GNU C++17 (Rev8  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2281,8 +2350,8 @@ events:
         ignore line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_9bbd6.dir/']
-        ignore line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\lukas\\AppData\\Local\\Temp\\cc5XUSlT.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_47d13.dir/']
+        ignore line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\lukas\\AppData\\Local\\Temp\\ccs6XGki.s]
         ignore line: [GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45]
         ignore line: [COMPILER_PATH=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/]
@@ -2293,8 +2362,8 @@ events:
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\narzedzia\\MSYS2\\mingw64\\bin\\c++.exe  -v -Wl -v CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_9bbd6.exe -Wl --out-implib libcmTC_9bbd6.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\narzedzia\\MSYS2\\mingw64\\bin\\c++.exe  -v -Wl -v CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_47d13.exe -Wl --out-implib libcmTC_47d13.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\narzedzia\\MSYS2\\mingw64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
@@ -2312,13 +2381,13 @@ events:
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9bbd6.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_9bbd6.']
-        link line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccbVRnFY.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_9bbd6.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9bbd6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_47d13.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_47d13.']
+        link line: [ D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccA8fXnn.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_47d13.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_47d13.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccbVRnFY.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccA8fXnn.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -2340,7 +2409,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_9bbd6.exe] ==> ignore
+          arg [cmTC_47d13.exe] ==> ignore
           arg [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
           arg [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -2350,9 +2419,9 @@ events:
           arg [-LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_9bbd6.dll.a] ==> ignore
+          arg [libcmTC_47d13.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2378,7 +2447,7 @@ events:
           arg [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
           arg [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccbVRnFY.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_9bbd6.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_9bbd6.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9bbd6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\lukas\\AppData\\Local\\Temp\\ccA8fXnn.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_47d13.exe D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_47d13.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_47d13.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o D:/narzedzia/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'CXX': D:/narzedzia/MSYS2/mingw64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]
