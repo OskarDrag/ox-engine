@@ -1,3 +1,0 @@
-C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/engine.dir
-C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/edit_cache.dir
-C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/rebuild_cache.dir
