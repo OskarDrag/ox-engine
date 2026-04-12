@@ -5,9 +5,16 @@
 #include "core/log.h"
 #include "core/assert.h"
 #include "core/window.h"
+#include "core/time.h"
+
+#if defined(OS_WINDOWS_32) || defined(OS_WINDOWS_64)
+    #include <windows.h>
+#endif
 
 static void (*gameFrameCallback)() = nullptr;
 static s_appState* appRef;
+
+static const float targetFPS = 90.0f;
 
 bool startupProgram(s_appState* appState, s_appConfig appConfig) {
 
@@ -15,7 +22,6 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
     appRef = appState;
     appRef->name = appConfig.name;
     appRef->isRunning = true;
-    appRef->timeRunning = 0.0f;
     #ifdef OS_WINDOWS_32
     appRef->platform = windows32;
     #elif OS_WINDOWS_64
@@ -43,12 +49,12 @@ bool startupProgram(s_appState* appState, s_appConfig appConfig) {
     if (appRef->platform == mac) {
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     }
+
+    appRef->time.absolute = setTime(0.0f);
     
     
     appRef->window = c_window(appConfig.name, appConfig.fullscreen, appConfig.width, appConfig.height);
-    appRef->camera = c_camera();
-    
-    appRef->renderer = c_renderer();
+    appRef->camera.getTimeAdress(&appRef->time.delta);
     appRef->renderer.setShaderPath("data/shaders/");
     ox_assert(appRef->renderer.initialise(&appRef->window, &appRef->camera));
     appRef->input = c_input(appRef->window.instance);
@@ -65,8 +71,12 @@ void setGameFrameCallback(void (*callback)()) {
 }
 
 void mainLoop() {
+    double frameStartTime;
+    double frameEndTime;
     while (appRef->isRunning) {
-        appRef->timeRunning = getTimeRunning();
+        frameStartTime = getTime();
+        appRef->time.absolute = frameStartTime;
+
         appRef->renderer.updateFrame();
         // all input should be done between update and reset
         appRef->input.update();
@@ -82,6 +92,15 @@ void mainLoop() {
         
         appRef->input.resetInput();
         if (glfwWindowShouldClose(appRef->window.instance)) appRef->isRunning = false;
+
+        float timeUntilNextFrame = frameStartTime + (1.0f / targetFPS) - getTime();
+        if (timeUntilNextFrame > 0.0f) {
+            #if defined(OS_WINDOWS_32) || defined(OS_WINDOWS_64)
+                Sleep(timeUntilNextFrame * 1000.0f);
+            #endif
+        }
+        frameEndTime = getTime();
+        appRef->time.delta = frameEndTime - frameStartTime;
     }
 }
 
@@ -92,8 +111,4 @@ void shutdownProgram() {
     glfwTerminate();
     shutdownLogger();
     exit(0);
-}
-
-double getTimeRunning() {
-    return appRef->timeRunning = glfwGetTime();
 }

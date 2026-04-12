@@ -2,15 +2,29 @@
 #include <ox.h>
 
 vec2 mousePositionPrevious;
+const float cameraSpeed = 1.0f;
+
+int fps;
+double referenceTime = 0;
 
 // the main loop of the game is here
 void gameFrame() {
-    // movement speed
-    if (ox_input.isButtonHeld(RMB)) {
-        ox_cam.setMovementSpeed((ox_cam.getMovementSpeed() - 0.001f));
+
+    if (referenceTime == 0) {
+        referenceTime = getTime();
     }
-    if (ox_input.isButtonHeld(LMB)) {
-        ox_cam.setMovementSpeed((ox_cam.getMovementSpeed() + 0.001f));
+    if (getTime() > referenceTime + 1.0f) {
+        referenceTime = getTime();
+        ox_debug("FPS: ", fps);
+        fps = 0;
+    }
+    fps++;
+    // movement speed
+    
+    if (ox_input.isKeyHeld(KEY_6)) {
+        ox_cam.setMovementSpeed((cameraSpeed / 5.0f));
+    } else {
+        ox_cam.setMovementSpeed((cameraSpeed));
     }
 
     // movement input

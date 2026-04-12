@@ -7,13 +7,11 @@ enum textureType {
     PNG
 };
 
-void textureSystemInitialise();
-
 class c_texture {
     public:
-        c_texture() = default;
-        c_texture(std::string texturePath);
-        ~c_texture();
+        OX_API c_texture();
+        bool create(std::string path);
+        OX_API ~c_texture();
         void bind();
         void unbind();
     private:

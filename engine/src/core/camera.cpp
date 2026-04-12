@@ -18,16 +18,13 @@ static glm::vec3 cameraForward;
 static float cameraFOV = 90.0f;
 float c_camera::m_movementSpeed = 0.01f;
 
-void c_camera::create() {
-
-}
 
 void c_camera::update() {
     glm::vec3 pos = glm::vec3(cameraPosition.x, cameraPosition.y, cameraPosition.z);
     glm::vec3 dir;
-    dir.z = cos(glm::radians(cameraRotation.y)) * cos(glm::radians(cameraRotation.x));
-    dir.y = sin(glm::radians(cameraRotation.x));
     dir.x = sin(glm::radians(cameraRotation.y)) * cos(glm::radians(cameraRotation.x));
+    dir.y = sin(glm::radians(cameraRotation.x));
+    dir.z = cos(glm::radians(cameraRotation.y)) * cos(glm::radians(cameraRotation.x));
     
     cameraDirection = glm::normalize(dir);
     cameraRight = glm::normalize(glm::cross(up, cameraDirection));
@@ -39,13 +36,13 @@ void c_camera::moveOnAxis(axis axis, float value) {
     switch (axis)
     {
     case X:
-        cameraPosition.x -= value;
+        cameraPosition.x -= value * *m_deltaTime;
         break;
     case Y:
-        cameraPosition.y -= value;
+        cameraPosition.y -= value * *m_deltaTime;
         break;
     case Z:
-        cameraPosition.z += value;
+        cameraPosition.z += value * *m_deltaTime;
         break;
     default:
         break;
@@ -55,19 +52,19 @@ void c_camera::moveOnAxis(axis axis, float value) {
 void c_camera::move(direction direction, float value) {
     switch (direction) {
         case RIGHT:
-            cameraPosition.x -= cameraRight.x * value;
-            cameraPosition.y -= cameraRight.y * value;
-            cameraPosition.z += cameraRight.z * value;
+            cameraPosition.x -= cameraRight.x * value * *m_deltaTime;
+            cameraPosition.y -= cameraRight.y * value * *m_deltaTime;
+            cameraPosition.z += cameraRight.z * value * *m_deltaTime;
             break;
         case UP:
-            cameraPosition.x += cameraUp.x * value;
-            cameraPosition.y -= cameraUp.y * value;
-            cameraPosition.z -= cameraUp.z * value;
+            cameraPosition.x += cameraUp.x * value * *m_deltaTime;
+            cameraPosition.y -= cameraUp.y * value * *m_deltaTime;
+            cameraPosition.z -= cameraUp.z * value * *m_deltaTime;
             break;
         case FORWARD:
-            cameraPosition.x -= cameraForward.x * value;
-            cameraPosition.y += cameraForward.y * value;
-            cameraPosition.z += cameraForward.z * value;
+            cameraPosition.x -= cameraForward.x * value * *m_deltaTime;
+            cameraPosition.y += cameraForward.y * value * *m_deltaTime;
+            cameraPosition.z += cameraForward.z * value * *m_deltaTime;
             break;
         default:
             break;
@@ -143,4 +140,8 @@ float c_camera::getFOV() {
 
 float c_camera::getMovementSpeed() {
     return m_movementSpeed;
+}
+
+void c_camera::getTimeAdress(double* deltaTime) {
+    m_deltaTime = deltaTime;
 }

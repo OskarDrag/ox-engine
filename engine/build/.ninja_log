@@ -1,0 +1,18 @@
+# ninja log v7
+7	24	7976952565880457	C:/Users/lukas/Desktop/ox-engine/engine/build/CMakeFiles/cmake.verify_globs	1945b51eb0da9d6c
+42	778	7976952566334039	CMakeFiles/engine.dir/src/core/math.cpp.obj	be3236008af681a8
+39	898	7976952566302109	CMakeFiles/engine.dir/src/core/log.cpp.obj	14c9024051bf99f3
+28	1065	7976952566160425	CMakeFiles/engine.dir/dependencies/stb/stb_image.cpp.obj	fdbe7c6d50cd53c
+33	1201	7976952566231873	CMakeFiles/engine.dir/src/core/camera.cpp.obj	316665aebcb7461f
+45	1207	7976952566363956	CMakeFiles/engine.dir/src/core/time.cpp.obj	8ca7c2cc15dc4593
+25	1218	7976952566160425	CMakeFiles/engine.dir/dependencies/glad/glad.c.obj	ace7c3e4c14ecc23
+62	1225	7976952566539859	CMakeFiles/engine.dir/src/renderer/vertexArray.cpp.obj	2d0d0a3cf47f5474
+66	1248	7976952566569600	CMakeFiles/engine.dir/src/renderer/vertexBuffer.cpp.obj	1d7079e3807d5810
+36	1273	7976952566270879	CMakeFiles/engine.dir/src/core/input.cpp.obj	9a30d82141cd864f
+59	1317	7976952566506929	CMakeFiles/engine.dir/src/renderer/texture.cpp.obj	e267e66127f5b7d7
+49	1335	7976952566403853	CMakeFiles/engine.dir/src/core/window.cpp.obj	83ab28612f7b10cf
+55	1404	7976952566477009	CMakeFiles/engine.dir/src/renderer/shader.cpp.obj	2aa92676996bb6a7
+52	1430	7976952566435263	CMakeFiles/engine.dir/src/renderer/renderer.cpp.obj	461d115262aaedfc
+30	1990	7976952566160425	CMakeFiles/engine.dir/src/application.cpp.obj	71a801aeb07f3ef5
+1990	2114	7976952586924274	C:/Users/lukas/Desktop/ox-engine/engine.dll	608c99dcd7ce8ac4
+1990	2114	7976952586924274	C:/Users/lukas/Desktop/ox-engine/engine.dll.a	608c99dcd7ce8ac4

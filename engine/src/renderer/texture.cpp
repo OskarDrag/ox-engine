@@ -3,14 +3,13 @@
 #include "../includes/vendor.h"
 #include "../core/log.h"
 
-void textureSystemInitialise() {
-    
-    
+
+c_texture::c_texture() {
     stbi_set_flip_vertically_on_load(true);
 }
 
-c_texture::c_texture(std::string texturePath) {
-    m_path = texturePath;
+bool c_texture::create(std::string path) {
+    m_path = path;
     int nrOfChannels;
     
 
@@ -28,8 +27,8 @@ c_texture::c_texture(std::string texturePath) {
     glGenTextures(1, &textureID);
     glBindTexture(GL_TEXTURE_2D, textureID);
     
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
@@ -44,10 +43,12 @@ c_texture::c_texture(std::string texturePath) {
         }
     }
     else {
-        ox_error("Failed to load texture: ", texturePath);
+        ox_error("Failed to load texture: ", m_path);
+        return 0;
     }
     glBindTexture(GL_TEXTURE_2D, 0);
     stbi_image_free(data);
+    return 1;
 }
 
 c_texture::~c_texture() {

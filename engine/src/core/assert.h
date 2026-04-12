@@ -25,4 +25,5 @@ OX_API void report_assertion(const char* expression, std::string message, std::s
     }                                               \
 }
 
+
 #endif

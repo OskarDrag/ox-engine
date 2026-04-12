@@ -81,7 +81,6 @@ void log(LogType type, argument... message) {
     insertIntoLogFile(fileOutput);
 }
 
-
 // macros for shorter log calls
 #define ox_error(message, ...) log(TYPE_ERROR, message, ##__VA_ARGS__) 
 

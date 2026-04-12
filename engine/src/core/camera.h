@@ -14,8 +14,6 @@ enum direction {
 
 class c_camera {
     public:
-        c_camera() = default;
-        void create();
         void update();
         OX_API void move(direction direction, float value);
         OX_API void moveOnAxis(axis axis, float value);
@@ -28,7 +26,9 @@ class c_camera {
         OX_API vec3 getRotation();
         OX_API float getFOV();
         OX_API float getMovementSpeed();
+        void getTimeAdress(double* deltaTime);
     private:
         static float m_movementSpeed;
+        double* m_deltaTime;
         
 };

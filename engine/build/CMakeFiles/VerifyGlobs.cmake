@@ -9,6 +9,7 @@ set(OLD_GLOB
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/input.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/log.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/math.cpp"
+  "C:/Users/lukas/Desktop/ox-engine/engine/src/core/time.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/core/window.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/renderer.cpp"
   "C:/Users/lukas/Desktop/ox-engine/engine/src/renderer/shader.cpp"

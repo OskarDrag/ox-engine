@@ -3,6 +3,7 @@
 #include "../includes/vendor.h"
 
 #include "../core/assert.h"
+#include "../core/log.h"
 
 static glm::mat4 model = glm::mat4(1.0f);
 static glm::mat4 view = glm::mat4(1.0f);
@@ -13,14 +14,14 @@ static vec3 drawPosition[4] = {
     {0.5f, -0.5f, 0.0f},
     {-0.5f, -0.5f, 0.0f},
     {-0.5f, 0.5f, 0.0f},
- };
+};
 
 static vec4 drawColor[4] = {
     vec4one(),
     vec4one(),
     vec4one(),
     vec4one()
- };
+};
 
 
 static vec2 drawuv[4] = { 
@@ -28,18 +29,51 @@ static vec2 drawuv[4] = {
     {1.0f, 0.0f},
     {0.0f, 0.0f},
     {0.0f, 1.0f},
- };
+};
+
+int c_renderer::m_quadCount = 0;
+
+static const s_transform cubeDefaultTransforms[6] = {
+    {
+        {0.0f, 0.0f, 0.5f},
+        {0.0f, 0.0f, 0.0f},
+        vec3one()
+    },
+    {
+        {0.0f, 0.0f, -0.5f},
+        {0.0f, 180.0f, 0.0f},
+        vec3one()
+    },
+    {
+        {0.5f, 0.0f, 0.0f},
+        {0.0f, 90.0f, 0.0f},
+        vec3one()
+    },
+    {
+        {-0.5f, 0.0f, 0.0f},
+        {0.0f, -90.0f, 0.0f},
+        vec3one()
+    },
+    {
+        {0.0f, 0.5f, 0.0f},
+        {90.0f, 0.0f, 0.0f},
+        vec3one()
+    },
+    {
+        {0.0f, -0.5f, 0.0f},
+        {-90.0f, 0.0f, 0.0f},
+        vec3one()
+    },
+};
 
 bool c_renderer::initialise(c_window* window, c_camera* camera) {
     m_windowRef = window;
     m_cameraRef = camera;
-
+    
     ox_assert(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress));
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glEnable(GL_BLEND);
     glEnable(GL_DEPTH_TEST);
-
-    textureSystemInitialise();
 
     m_shader = c_shader();
     m_shader.create("vertexShader.glsl", "fragmentShader.glsl", m_settings.shaderPath);
@@ -56,6 +90,10 @@ bool c_renderer::initialise(c_window* window, c_camera* camera) {
     m_array.addAttribute(m_buffer.getData(), 4);    // color
     m_array.addAttribute(m_buffer.getData(), 2);    // uv 
 
+    m_texture = c_texture();
+    //m_texture.create("data/DefaultTexture.png");
+    //m_usedTextures.push_back("data/DefaultTexture.png");
+
     m_array.unbind();
     return 1;
 }
@@ -66,7 +104,7 @@ void c_renderer::updateFrame() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 
-
+    //orthographic projection
     //projection = glm::ortho(-m_windowRef->getAspectRatio(), m_windowRef->getAspectRatio(), -1.0f, 1.0f, -100.0f, 100.0f);
 
     projection = glm::perspective(glm::radians(m_cameraRef->getFOV()), m_windowRef->getAspectRatio(), 0.01f, 100.0f);
@@ -83,45 +121,42 @@ void c_renderer::updateFrame() {
     m_shader.setMat4("view", glm::value_ptr(view));
 
     m_shader.run();
-    
-    c_texture texture("data/test/textures/Texture 1.jpg");
-    texture.bind();
     m_array.bind();
 
-    model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.5f));
-    model = glm::rotate(model, glm::radians(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-    m_shader.setMat4("model", glm::value_ptr(model));
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    for (int i = 0; i < 6; i++) {
+        std::string texL = "data/test/textures/L.jpg";
+        drawQuad(cubeDefaultTransforms[i], texL);
+    }
 
-    model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -0.5f));
-    model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-    m_shader.setMat4("model", glm::value_ptr(model));
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    //ox_debug("Quad count: ", m_quadCount);
+    m_quadCount = 0;
 
-    model = glm::translate(glm::mat4(1.0f), glm::vec3(0.5f, 0.0f, 0.0f));
-    model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-    m_shader.setMat4("model", glm::value_ptr(model));
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
-    model = glm::translate(glm::mat4(1.0f), glm::vec3(-0.5f, 0.0f, 0.0f));
-    model = glm::rotate(model, glm::radians(-90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-    m_shader.setMat4("model", glm::value_ptr(model));
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
-    model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.5f, 0.0f));
-    model = glm::rotate(model, glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-    m_shader.setMat4("model", glm::value_ptr(model));
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
-    model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -0.5f, 0.0f));
-    model = glm::rotate(model, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-    m_shader.setMat4("model", glm::value_ptr(model));
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
-    
-
-    
     glfwSwapBuffers(m_windowRef->instance);
+}
+
+void c_renderer::drawQuad(s_transform quadTransform, std::string texturePath) {
+    if (std::find(m_usedTextures.begin(), m_usedTextures.end(), texturePath) == m_usedTextures.end()) {
+        ox_debug("Texture not used");
+        m_texture.create(texturePath);
+        m_usedTextures.push_back(texturePath);// TODO: wiele tekstur
+    }
+    
+    m_texture.bind();
+    model = glm::translate(glm::mat4(1.0f),   glm::vec3(quadTransform.location.x,
+                                                        quadTransform.location.y,
+                                                        quadTransform.location.z));
+
+    model = glm::rotate(model, glm::radians(quadTransform.rotation.x),  glm::vec3(1.0f, 0.0f, 0.0f));
+    model = glm::rotate(model, glm::radians(quadTransform.rotation.y),  glm::vec3(0.0f, 1.0f, 0.0f));
+    model = glm::rotate(model, glm::radians(quadTransform.rotation.z),  glm::vec3(0.0f, 0.0f, 1.0f));
+
+    model = glm::scale(model, glm::vec3(quadTransform.scale.x,
+                                        quadTransform.scale.y,
+                                        quadTransform.scale.z));
+
+    m_shader.setMat4("model", glm::value_ptr(model));
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    m_quadCount++;
 }
 
 void c_renderer::shutdown() {

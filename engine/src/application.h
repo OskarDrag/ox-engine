@@ -4,7 +4,9 @@
 #include "core/window.h"
 #include "core/input.h"
 #include "core/camera.h"
+#include "core/time.h"
 #include "renderer/renderer.h"
+
 
 enum e_platform {
     windows32   = 0,
@@ -14,6 +16,11 @@ enum e_platform {
     mac         = 4,
 };
 
+enum e_layer {
+    LAYER_L,
+    LAYER_EMPTY
+};
+
 struct s_settings {
     s_settingsRenderer renderer;
 };
@@ -21,7 +28,7 @@ struct s_settings {
 struct s_appState {
     std::string name;
     bool isRunning;
-    double timeRunning;
+    s_time time;
     e_platform platform;
     c_window window;
     c_renderer renderer;
